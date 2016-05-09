@@ -28,3 +28,48 @@ minetest.register_craft({
 		{"default:gold_ingot", "default:gold_ingot", "default:gold_ingot"}
 	}
 })
+
+minetest.register_craft({
+	output = "oresplus:sword_emerald",
+	recipe = {
+		{"oresplus:emerald"},
+		{"oresplus:emerald"},
+		{"group:stick"},
+	}
+})
+
+minetest.register_craft({
+	output = "oresplus:axe_emerald",
+	recipe = {
+		{"oresplus:emerald", "oresplus:emerald"},
+		{"group:stick", "oresplus:emerald"},
+		{"group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "oresplus:axe_emerald",
+	recipe = {
+		{"oresplus:emerald", "oresplus:emerald"},
+		{"oresplus:emerald", "group:stick"},
+		{"", "group:stick"},
+	}
+})
+
+minetest.register_craft({
+	output = "oresplus:shovel_emerald",
+	recipe = {
+		{"oresplus:emerald"},
+		{"group:stick"},
+		{"group:stick"},
+	}
+})
+
+minetest.register_craft({
+	output = "oresplus:pick_emerald",
+	recipe = {
+		{"oresplus:emerald", "oresplus:emerald", "oresplus:emerald"},
+		{"", "group:stick", ""},
+		{"", "group:stick", ""},
+	}
+})
