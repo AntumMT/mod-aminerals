@@ -17,5 +17,5 @@ minetest.register_craftitem('minerals:mese_crystal', {
 -- Diamond
 minetest.register_craftitem('minerals:diamond', {
 	description = 'Diamond',
-	inventory_image = 'minerals_diamond.png',
+	inventory_image = 'minerals_gem_diamond.png',
 })
