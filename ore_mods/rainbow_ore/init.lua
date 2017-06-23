@@ -1,0 +1,192 @@
+-- Rainbow_Ore Test Mod ----------- Copyright Robin Kuhn 2015
+
+--Check for mods
+if minetest.get_modpath("3d_armor") then
+dofile(minetest.get_modpath("rainbow_ore").."/rainbow_armor.lua")
+end
+
+if minetest.get_modpath("shields") then
+dofile(minetest.get_modpath("rainbow_ore").."/rainbow_shield.lua")
+end
+
+-- Define Rainbow_Ore_Block node
+minetest.register_node("rainbow_ore:rainbow_ore_block", {
+	description = "Rainbow Ore",
+	tiles = {"rainbow_ore_block.png"},
+	groups = {stone=2, cracky=3},
+	drop = "rainbow_ore:rainbow_ore_block",
+	is_ground_content = true,
+})
+minetest.register_alias("rainbow_ore:block", "rainbow_ore:rainbow_ore_block")
+
+
+--Define Rainbow_Ore_Ingot node
+minetest.register_craftitem("rainbow_ore:rainbow_ore_ingot", {
+	description = "Rainbow Ore Ingot",
+	inventory_image = "rainbow_ore_ingot.png",
+})
+minetest.register_alias("rainbow_ore:ingot", "rainbow_ore:rainbow_ore_ingot")
+
+--Define Rainbow_Ore Smelt Recipe
+minetest.register_craft({
+	type = "cooking",
+	output = "rainbow_ore:rainbow_ore_ingot",
+	recipe = "rainbow_ore:rainbow_ore_block",
+	cooktime = 10,
+})
+
+
+local t_uses = {}
+local tool_wear_enabled = minetest.settings:get_bool("enable_tool_wear")
+if tool_wear_enabled == nil then
+	-- Default is enabled
+	tool_wear_enabled = true
+end
+
+if tool_wear_enabled then
+	t_uses.fifteen = 15
+	t_uses.twenty = 20
+else
+	t_uses.fifteen = 0
+	t_uses.twenty = 0
+end
+
+--Register Rainbow Pickaxe
+minetest.register_tool("rainbow_ore:rainbow_ore_pickaxe", {
+	description = "Rainbow Pickaxe",
+	inventory_image = "rainbow_ore_pickaxe.png",
+	tool_capabilities = {
+		full_punch_interval = 0.9,
+		max_drop_level=3,
+		groupcaps={
+			cracky = {times={[1]=1.0, [2]=0.5, [3]=0.25}, uses=t_uses.fifteen, maxlevel=3},
+		},
+		damage_groups = {fleshy=5},
+	},
+})
+for index, alias in ipairs({"pick", "pickaxe",}) do
+	minetest.register_alias("rainbow_ore:" .. alias, "rainbow_ore:rainbow_ore_pickaxe")
+end
+
+
+--Define Rainbow_Ore_Pickaxe crafting recipe
+minetest.register_craft({
+	output = "rainbow_ore:rainbow_ore_pickaxe",
+	recipe = {
+		{"rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot", ""},
+		{"", "default:stick", "", ""},
+		{"", "default:stick", "", ""}
+	}
+})
+
+
+--Register Rainbow Axe
+minetest.register_tool("rainbow_ore:rainbow_ore_axe", {
+	description = "Rainbow Axe",
+	inventory_image = "rainbow_ore_axe.png",
+	tool_capabilities = {
+		full_punch_interval = 0.9,
+		max_drop_level=3,
+		groupcaps={
+			choppy={times={[1]=1.05, [2]=0.45, [3]=0.25}, uses=t_uses.fifteen, maxlevel=3},
+		},
+		damage_groups = {fleshy=7},
+	}
+})
+minetest.register_alias("rainbow_ore:axe", "rainbow_ore:rainbow_ore_axe")
+
+--Define Rainbow Axe crafting recipe
+minetest.register_craft({
+	output = "rainbow_ore:rainbow_ore_axe",
+	recipe = {
+		{"rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot", "", ""},
+		{"rainbow_ore:rainbow_ore_ingot", "default:stick", "", ""},
+		{"", "default:stick", "", ""}
+	}
+})
+
+minetest.register_craft({
+	output = "rainbow_ore:rainbow_ore_axe",
+	recipe = {
+		{"", "rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot", ""},
+		{"", "default:stick", "rainbow_ore:rainbow_ore_ingot", ""},
+		{"", "default:stick", "", ""}
+	}
+})
+
+
+--Register Rainbow shovel
+minetest.register_tool("rainbow_ore:rainbow_ore_shovel", {
+	description = "Rainbow Shovel",
+	inventory_image = "rainbow_ore_shovel.png",
+	wield_image = "rainbow_ore_shovel.png^[transformR90",
+	tool_capabilities = {
+		full_punch_interval = 1.0,
+		max_drop_level=3,
+		groupcaps={
+			crumbly = {times={[1]=0.55, [2]=0.25, [3]=0.15}, uses=t_uses.fifteen, maxlevel=3},
+		},
+		damage_groups = {fleshy=4},
+	},
+})
+minetest.register_alias("rainbow_ore:shovel", "rainbow_ore:rainbow_ore_shovel")
+
+--Define Rainbow shovel crafting recipe
+minetest.register_craft({
+	output = "rainbow_ore:rainbow_ore_shovel",
+	recipe = {
+		{"", "rainbow_ore:rainbow_ore_ingot", "", ""},
+		{"", "default:stick", "", ""},
+		{"", "default:stick", "", ""}
+	}
+})
+
+
+--Register Rainbow sword
+minetest.register_tool("rainbow_ore:rainbow_ore_sword", {
+	description = "Rainbow Sword",
+	inventory_image = "rainbow_ore_sword.png",
+	tool_capabilities = {
+		full_punch_interval = 0.7,
+		max_drop_level=3,
+		groupcaps={
+			snappy={times={[1]=0.95, [2]=0.45, [3]=0.15}, uses=t_uses.twenty, maxlevel=3},
+		},
+		damage_groups = {fleshy=8},
+	}
+})
+minetest.register_alias("rainbow_ore:sword", "rainbow_ore:rainbow_ore_sword")
+
+--Define Rainbow sword crafting recipe
+minetest.register_craft({
+	output = "rainbow_ore:rainbow_ore_sword",
+	recipe = {
+		{"", "rainbow_ore:rainbow_ore_ingot", "", ""},
+		{"", "rainbow_ore:rainbow_ore_ingot", "", ""},
+		{"", "default:stick", "", ""}
+	}
+})
+
+
+--Define Nyan Rainbow crafting recipe
+minetest.register_craft({
+	output = "default:nyancat_rainbow",
+	recipe = {
+		{"rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot"},
+		{"rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot"},
+		{"rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot", "rainbow_ore:rainbow_ore_ingot"}
+	}
+})
+
+
+--Make Rainbow Ore spawn
+minetest.register_ore({
+	ore_type = "scatter",
+	ore = "rainbow_ore:rainbow_ore_block",
+	wherein = "default:stone",
+	clust_scarcity = 17*17*17,
+	clust_num_ores = 3,
+	clust_size = 3,
+	y_min = -31000,
+	y_max = -200,
+})
