@@ -1,0 +1,149 @@
+## Ores/Minerals (nodes)
+- default
+- gems_encrustable
+  - gems:mineral_garnet
+  - gems:mineral_aquamarine
+  - gems:mineral_topaz
+  - gems:mineral_diamond
+  - gems:mineral_opal
+- gems_tools
+  - gems:ruby_ore
+  - gems:emerald_ore
+  - gems:sapphire_ore
+  - gems:amethyst_ore
+- moreores
+  - moreores:mineral_\<mineral_name\>
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Blocks (nodes)
+- default
+- gems_encrustable
+- gems_tools
+  - gems:ruby_block
+  - gems:emerald_block
+  - gems:sapphire_block
+  - gems:amethyst_block
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Tools (nodes)
+- default
+- gems_encrustable
+- gems_tools
+  - gems:gem_fabricator
+  - gems:gem_fabricator_active
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Ingots
+- default
+- gems_encrustable
+- gems_tools
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Gems
+- default
+- gems_encrustable
+  - gems:garnet
+  - gems:aquamarine
+  - gems:topaz
+  - gems:diamond
+  - gems:opal
+- gems_tools
+  - gems:diamond_cutting_wheel
+  - gems:raw_amethyst
+  - gems:raw_ruby
+  - gems:raw_emerald
+  - gems:raw_sapphire
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Tools
+- default
+- gems_encrustable
+  - gems:pick_\<metal\>
+  - gems:axe_\<metal\>
+  - gems:shovel_\<metal\>
+- gems_tools
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Weapons
+- default
+- gems_encrustable
+  - gems:sword_\<metal\>
+- gems_tools
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Armor
+- default
+- gems_encrustable
+- gems_tools
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Craft Items
+- default
+- gems_encrustable
+- gems_tools
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
+
+## Craft Recipes
+- default
+- gems_encrustable
+- gems_tools
+- moreores
+- ores
+- oresplus
+- quartz
+- rainbow_ore
+- uranium
+- xtraores
