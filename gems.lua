@@ -8,3 +8,14 @@
 --]]
 
 
+-- Mese
+minetest.register_craftitem('minerals:mese_crystal', {
+	description = 'Mese Crystal',
+	inventory_image = 'minerals_mese_crystal.png',
+})
+
+-- Diamond
+minetest.register_craftitem('minerals:diamond', {
+	description = 'Diamond',
+	inventory_image = 'minerals_diamond.png',
+})
