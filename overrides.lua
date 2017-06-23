@@ -17,32 +17,44 @@ local function mod_exists(modname)
 	return false
 end
 
+-- Un-registers an item & replaces it as an alias
+local function replace_item(old, new)
+	minetest.unregister_item(old)
+	minetest.register_alias(old, new)
+end
+
 
 -- Override 'default'
 if mod_exists('default') then
 	local default_minerals = {
 		'coal',
 		'copper',
-		'diamond',
 		'gold',
 		'iron',
-		'mese',
 		'tin',
 	}
 	
-	for index, mineral in ipairs(default_minerals) do
-		-- Ore/Minerals
+	local default_gems = {
+		'diamond',
+		'mese',
+	}
+	
+	for index, mineral in ipairs(default_minerals + default_gems) do
+		-- Ore/Mineral blocks
 		local old = 'default:stone_with_' .. mineral
 		local new = 'minerals:' .. mineral
 		minetest.unregister_item(old)
 		minetest.register_alias(old, new)
-		
-		-- Lumps
-		old = 'default:' .. mineral .. '_lump'
-		new = 'minerals:' .. mineral .. '_lump'
-		minetest.unregister_item(old)
-		minetest.register_alias(old, new)
 	end
+	
+	for index, mineral in ipairs(default_minerals) do
+		-- Lumps
+		replace_item('default:' .. mineral .. '_lump', 'minerals:' .. mineral .. '_lump')
+	end
+	
+	-- Gems
+	replace_item('default:diamond', 'minerals:gem_diamond')
+	replace_item('default:mese_crystal', 'minerals:gem_mese')
 end
 
 
