@@ -27,7 +27,6 @@ end
 -- Override 'default'
 if mod_exists('default') then
 	local default_minerals = {
-		'coal',
 		'copper',
 		'gold',
 		'iron',
@@ -39,17 +38,19 @@ if mod_exists('default') then
 		'mese',
 	}
 	
-	for index, mineral in ipairs(default_minerals + default_gems) do
+	for index, mineral in ipairs({'coal',} + default_minerals + default_gems) do
 		-- Ore/Mineral blocks
-		local old = 'default:stone_with_' .. mineral
-		local new = 'minerals:' .. mineral
-		minetest.unregister_item(old)
-		minetest.register_alias(old, new)
+		minerals.replace_item('default:stone_with_' .. mineral, 'minerals:' .. mineral)
 	end
 	
-	for index, mineral in ipairs(default_minerals) do
+	for index, mineral in ipairs({'coal',} + default_minerals) do
 		-- Lumps
 		replace_item('default:' .. mineral .. '_lump', 'minerals:' .. mineral .. '_lump')
+	end
+	
+	for index, mineral in ipairs({'bronze', 'steel',} + default_minerals) do
+		-- Ingots
+		minerals.replace_item('default:' .. mineral .. '_ingot', 'minerals:ingot_' .. mineral)
 	end
 	
 	-- Gems
