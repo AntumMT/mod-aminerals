@@ -8,9 +8,9 @@
 --]]
 
 
-ore = {}
-ore.modname = minetest.get_current_modname()
-ore.modpath = minetest.get_modpath(ore.modname)
+minerals = {}
+minerals.modname = minetest.get_current_modname()
+minerals.modpath = minetest.get_modpath(minerals.modname)
 
 
 local scripts = {
@@ -19,5 +19,5 @@ local scripts = {
 }
 
 for index, script in ipairs(scripts) do
-	dofile(ore.modpath .. '/' .. script .. '.lua')
+	dofile(minerals.modpath .. '/' .. script .. '.lua')
 end

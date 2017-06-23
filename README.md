@@ -1,6 +1,6 @@
-# ***ore*** mod for [Minetest][]
+# ***minerals*** mod for [Minetest][]
 
-An attempt to unify ores from multiple different Minetest mods.
+An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 
 ## **Mods list**
 * *default* ([minetest_game][])
