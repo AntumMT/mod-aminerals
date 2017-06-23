@@ -48,13 +48,13 @@ minetest.register_craftitem('minerals:tin_lump', {
 -- *** GEMS ***
 
 -- Mese
-minetest.register_craftitem('minerals:mese_crystal', {
+minetest.register_craftitem('minerals:gem_mese', {
 	description = 'Mese Crystal',
 	inventory_image = 'minerals_gem_mese.png',
 })
 
 -- Diamond
-minetest.register_craftitem('minerals:diamond', {
+minetest.register_craftitem('minerals:gem_diamond', {
 	description = 'Diamond',
 	inventory_image = 'minerals_gem_diamond.png',
 })
