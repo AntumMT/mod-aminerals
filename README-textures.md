@@ -20,7 +20,12 @@
 - minerals_raw_mese.png
 - minerals_raw_tin.png
 
+#### [CC BY-SA][lic.rainbow_ore] (from [rainbow_ore][])
+- minerals_raw_rainbow.png
+
 
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
+[rainbow_ore]: https://forum.minetest.net/viewtopic.php?t=13519
 
 [lic.default]: https://github.com/minetest/minetest_game/blob/master/mods/default/license.txt
+[lic.rainbow_ore]: https://github.com/FsxShader2012/rainbow_ore/blob/master/README.md
