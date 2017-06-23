@@ -49,6 +49,8 @@ local ingots = {
 	'bronze',
 	'copper',
 	'gold',
+	'iron',
+	'tin',
 }
 
 for index, ingot in ipairs(ingots) do
