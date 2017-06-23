@@ -20,3 +20,9 @@ function minerals.register_mineral(name, def)
 	minetest.register_node(name, def)
 	minerals.log('Registered mineral "' .. name .. '"')
 end
+
+-- Titleizes a string
+-- FIXME: Only titleizes first word
+function minerals.titleize(str)
+	return str:gsub('^%l', string.upper)
+end
