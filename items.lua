@@ -10,7 +10,6 @@
 
 -- *** ORE LUMPS ***
 
--- Coal
 minetest.register_craftitem('minerals:coal_lump', {
 	description = 'Coal Lump',
 	inventory_image = 'minerals_coal_lump.png',
@@ -20,7 +19,6 @@ minetest.register_craftitem('minerals:coal_lump', {
 	},
 })
 
--- Copper
 minetest.register_craftitem('minerals:copper_lump', {
 	description = 'Copper Lump',
 	inventory_image = 'minerals_copper_lump.png',
@@ -43,6 +41,16 @@ minetest.register_craftitem('minerals:tin_lump', {
 	description = 'Tin Lump',
 	inventory_image = 'minerals_tin_lump.png',
 })
+
+
+-- *** INGOTS ***
+
+minetest.register_craftitem('minerals:ingot_copper', {
+	description = 'Copper Ingot',
+	inventory_image = 'minerals_ingot_copper.png',
+})
+minetest.register_alias('minerals:copper_ingot', 'minerals:ingot_copper')
+minetest.register_alias('copper_ingot', 'minerals:ingot_copper')
 
 
 -- *** GEMS ***
