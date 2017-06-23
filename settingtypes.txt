@@ -1,0 +1,2 @@
+# Comma-separated list of minerals to disable.
+disabled_minerals (Minerals to disable) string
