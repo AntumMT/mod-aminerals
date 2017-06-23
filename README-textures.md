@@ -21,6 +21,8 @@
 - minerals_raw_tin.png
 
 #### [CC BY-SA][lic.rainbow_ore] (from [rainbow_ore][])
+- minerals_block_rainbow.png
+- minerals_ingot_rainbow.png
 - minerals_raw_rainbow.png
 
 
