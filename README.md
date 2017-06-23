@@ -5,6 +5,7 @@ An attempt to unify ores from multiple different Minetest mods.
 ## **Mods list**
 * *default* ([minetest_game][])
 * *[gems][gems_encrustable]* (Encrustable Gems) by wowiamdiamonds ([GitHub][gh.gems_encrustable])
+* *[gems][gems_tools]* (Gem Tools) by LionLAD/captainLAD ([GitHub][gh.gems_tools])
 * *[moreores][]* by Calinou ([GitHub][gh.moreores])
 * *[ores][]* by Enke ([GitHub][gh.ores])
 * *[oresplus][oresplus]* by everamzah ([GitHub][gh.oresplus])
@@ -17,6 +18,7 @@ An attempt to unify ores from multiple different Minetest mods.
 [Minetest]: http://www.minetest.net/
 
 [gems_encrustable]: https://forum.minetest.net/viewtopic.php?t=2596
+[gems_tools]: https://forum.minetest.net/viewtopic.php?t=4294
 [minetest_game]: https://github.com/minetest/minetest_game
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98/
@@ -26,6 +28,7 @@ An attempt to unify ores from multiple different Minetest mods.
 [xtraores]: https://forum.minetest.net/viewtopic.php?t=12798
 
 [gh.gems_encrustable]: https://github.com/wowiamdiamonds/gems
+[gh.gems_tools]: https://github.com/captainLAD/gems
 [gh.moreores]: https://github.com/minetest-mods/moreores
 [gh.ores]: https://github.com/Nullsrc/Ores
 [gh.oresplus]: https://github.com/taikedz/everamzah-oresplus
