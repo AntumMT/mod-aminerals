@@ -35,3 +35,7 @@
 - Titleizes a string (e.g., converts 'hello' to 'Hello'
 - Return type: nil
 - FIXME: Only titleizes first letter in string (should convert all whitespace-separated substrings)
+
+### ***minerals.list_contains(list, value)***
+- Checks table contents for a specified a value
+- Return type: bool

@@ -26,3 +26,14 @@ end
 function minerals.titleize(str)
 	return str:gsub('^%l', string.upper)
 end
+
+-- Checks table contents for a specified a value
+function minerals.list_contains(list, value)
+	for index, list_item in ipairs(list) do
+		if list_item == value then
+			return true
+		end
+	end
+	
+	return false
+end
