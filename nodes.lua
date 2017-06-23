@@ -23,63 +23,63 @@ minerals:
 
 
 -- Coal
-minerals.register_mineral('minerals:coal', {
+minerals.register_mineral('minerals:raw_coal', {
 	description = 'Coal Ore',
-	tiles = {'default_stone.png^minerals_coal.png'},
+	tiles = {'default_stone.png^minerals_raw_coal.png'},
 	groups = {cracky = 3},
 	drop = 'minerals:coal_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
 
 -- Copper
-minerals.register_mineral('minerals:copper', {
+minerals.register_mineral('minerals:raw_copper', {
 	description = 'Copper Ore',
-	tiles = {'default_stone.png^minerals_copper.png'},
+	tiles = {'default_stone.png^minerals_raw_copper.png'},
 	groups = {cracky = 2},
 	drop = 'minerals:copper_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
 
 -- Diamond
-minerals.register_mineral('minerals:diamond', {
+minerals.register_mineral('minerals:raw_diamond', {
 	description = 'Diamond Ore',
-	tiles = {'default_stone.png^minerals_diamond.png'},
+	tiles = {'default_stone.png^minerals_raw_diamond.png'},
 	groups = {cracky = 1},
 	drop = 'minerals:diamond',
 	sounds = default.node_sound_stone_defaults(),
 })
 
 -- Gold
-minerals.register_mineral('minerals:gold', {
+minerals.register_mineral('minerals:raw_gold', {
 	description = 'Gold Ore',
-	tiles = {'default_stone.png^minerals_gold.png'},
+	tiles = {'default_stone.png^minerals_raw_gold.png'},
 	groups = {cracky = 2},
 	drop = 'minerals:gold_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
 
 -- Iron
-minerals.register_mineral('minerals:iron', {
+minerals.register_mineral('minerals:raw_iron', {
 	description = 'Iron Ore',
-	tiles = {'default_stone.png^minerals_iron.png'},
+	tiles = {'default_stone.png^minerals_raw_iron.png'},
 	groups = {cracky = 2},
 	drop = 'minerals:iron_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
 
 -- Mese
-minerals.register_mineral('minerals:mese', {
+minerals.register_mineral('minerals:raw_mese', {
 	description = 'Mese Ore',
-	tiles = {'default_stone.png^minerals_mese.png'},
+	tiles = {'default_stone.png^minerals_raw_mese.png'},
 	groups = {cracky = 1},
 	drop = 'minerals:mese_crystal',
 	sounds = default.node_sound_stone_defaults(),
 })
 
 -- Tin
-minerals.register_mineral('minerals:tin', {
+minerals.register_mineral('minerals:raw_tin', {
 	description = 'Tin Ore',
-	tiles = {'default_stone.png^minerals_tin.png'},
+	tiles = {'default_stone.png^minerals_raw_tin.png'},
 	groups = {cracky = 2},
 	drop = 'minerals:tin_lump',
 	sounds = default.node_sound_stone_defaults(),

@@ -40,12 +40,12 @@ if mod_exists('default') then
 	
 	for index, mineral in ipairs({'coal',} + default_minerals + default_gems) do
 		-- Ore/Mineral blocks
-		minerals.replace_item('default:stone_with_' .. mineral, 'minerals:' .. mineral)
+		minerals.replace_item('default:stone_with_' .. mineral, 'minerals:raw_' .. mineral)
 	end
 	
 	for index, mineral in ipairs({'coal',} + default_minerals) do
 		-- Lumps
-		replace_item('default:' .. mineral .. '_lump', 'minerals:' .. mineral .. '_lump')
+		replace_item('default:' .. mineral .. '_lump', 'minerals:lump_' .. mineral)
 	end
 	
 	for index, mineral in ipairs({'bronze', 'steel',} + default_minerals) do
