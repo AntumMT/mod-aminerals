@@ -19,28 +19,22 @@ minetest.register_craftitem('minerals:coal_lump', {
 	},
 })
 
-minetest.register_craftitem('minerals:copper_lump', {
-	description = 'Copper Lump',
-	inventory_image = 'minerals_lump_copper.png',
-})
+local lumps = {
+	'copper',
+	'gold',
+	'iron',
+	'tin',
+}
 
--- Gold
-minetest.register_craftitem('minerals:gold_lump', {
-	description = 'Gold Lump',
-	inventory_image = 'minerals_lump_gold.png',
-})
-
--- Iron
-minetest.register_craftitem('minerals:iron_lump', {
-	description = 'Iron Lump',
-	inventory_image = 'minerals_lump_iron.png',
-})
-
--- Tin
-minetest.register_craftitem('minerals:tin_lump', {
-	description = 'Tin Lump',
-	inventory_image = 'minerals_lump_tin.png',
-})
+for index, lump in ipairs(lumps) do
+	local lump_name = 'minerals:lump_' .. lump
+	minetest.register_craftitem(lump_name, {
+		description = minerals.titleize(lump) .. ' Lump',
+		inventory_image = 'minerals_lump_' .. lump .. '.png',
+	})
+	minetest.register_alias('minerals:' .. lump .. '_lump', lump_name)
+	minetest.register_alias(lump .. '_lump', lump_name)
+end
 
 
 -- *** INGOTS ***
