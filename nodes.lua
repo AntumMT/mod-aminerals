@@ -41,10 +41,9 @@ minetest.register_node('minerals:copper', {
 })
 
 -- Diamond
--- FIXME: Conflicts with 'minerals:diamond' craft item???
 minetest.register_node('minerals:diamond', {
 	description = 'Diamond Ore',
-	tiles = {'default_stone.png^minerals_diamond_raw.png'},
+	tiles = {'default_stone.png^minerals_diamond.png'},
 	groups = {cracky = 1},
 	drop = 'minerals:diamond',
 	sounds = default.node_sound_stone_defaults(),
