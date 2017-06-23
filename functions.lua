@@ -8,3 +8,9 @@
 --]]
 
 
+-- Logs message output with header
+function minerals.log(message)
+	if minetest.settings:get_bool('log_mods') then
+		minetest.log('action', '[' .. minerals.modname .. '] ' .. message)
+	end
+end
