@@ -45,6 +45,13 @@ minetest.register_craftitem('minerals:tin_lump', {
 
 -- *** INGOTS ***
 
+minetest.register_craftitem('minerals:ingot_bronze', {
+	description = 'Bronze Ingot',
+	inventory_image = 'minerals_ingot_bronze.png',
+})
+minetest.register_alias('minerals:bronze_ingot', 'minerals:ingot_bronze')
+minetest.register_alias('bronze_ingot', 'minerals:ingot_bronze')
+
 minetest.register_craftitem('minerals:ingot_copper', {
 	description = 'Copper Ingot',
 	inventory_image = 'minerals_ingot_copper.png',
