@@ -23,7 +23,7 @@ minerals:
 
 
 -- Coal
-minetest.register_node('minerals:coal', {
+minerals.register_mineral('minerals:coal', {
 	description = 'Coal Ore',
 	tiles = {'default_stone.png^minerals_coal.png'},
 	groups = {cracky = 3},
@@ -32,7 +32,7 @@ minetest.register_node('minerals:coal', {
 })
 
 -- Copper
-minetest.register_node('minerals:copper', {
+minerals.register_mineral('minerals:copper', {
 	description = 'Copper Ore',
 	tiles = {'default_stone.png^minerals_copper.png'},
 	groups = {cracky = 2},
@@ -41,7 +41,7 @@ minetest.register_node('minerals:copper', {
 })
 
 -- Diamond
-minetest.register_node('minerals:diamond', {
+minerals.register_mineral('minerals:diamond', {
 	description = 'Diamond Ore',
 	tiles = {'default_stone.png^minerals_diamond.png'},
 	groups = {cracky = 1},
@@ -50,7 +50,7 @@ minetest.register_node('minerals:diamond', {
 })
 
 -- Gold
-minetest.register_node('minerals:gold', {
+minerals.register_mineral('minerals:gold', {
 	description = 'Gold Ore',
 	tiles = {'default_stone.png^minerals_gold.png'},
 	groups = {cracky = 2},
@@ -59,7 +59,7 @@ minetest.register_node('minerals:gold', {
 })
 
 -- Iron
-minetest.register_node('minerals:iron', {
+minerals.register_mineral('minerals:iron', {
 	description = 'Iron Ore',
 	tiles = {'default_stone.png^minerals_iron.png'},
 	groups = {cracky = 2},
@@ -68,7 +68,7 @@ minetest.register_node('minerals:iron', {
 })
 
 -- Mese
-minetest.register_node('minerals:mese', {
+minerals.register_mineral('minerals:mese', {
 	description = 'Mese Ore',
 	tiles = {'default_stone.png^minerals_mese.png'},
 	groups = {cracky = 1},
@@ -77,7 +77,7 @@ minetest.register_node('minerals:mese', {
 })
 
 -- Tin
-minetest.register_node('minerals:tin', {
+minerals.register_mineral('minerals:tin', {
 	description = 'Tin Ore',
 	tiles = {'default_stone.png^minerals_tin.png'},
 	groups = {cracky = 2},
