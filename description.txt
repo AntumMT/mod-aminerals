@@ -1,0 +1,1 @@
+An attempt at unifying ores/gems/minerals from multiple mods for Minetest.
