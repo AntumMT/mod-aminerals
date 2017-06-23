@@ -52,6 +52,7 @@ if mod_exists('default') then
 		-- Ingots
 		minerals.replace_item('default:' .. mineral .. '_ingot', 'minerals:ingot_' .. mineral)
 	end
+	minetest.register_alias('minerals:ingot_steel', 'minerals:ingot_iron')
 	
 	-- Gems
 	replace_item('default:diamond', 'minerals:gem_diamond')
