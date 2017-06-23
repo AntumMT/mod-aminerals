@@ -59,6 +59,13 @@ minetest.register_craftitem('minerals:ingot_copper', {
 minetest.register_alias('minerals:copper_ingot', 'minerals:ingot_copper')
 minetest.register_alias('copper_ingot', 'minerals:ingot_copper')
 
+minetest.register_craftitem('minerals:ingot_gold', {
+	description = 'Gold Ingot',
+	inventory_image = 'minerals_ingot_gold.png'
+})
+minetest.register_alias('minerals:gold_ingot', 'minerals:ingot_gold')
+minetest.register_alias('gold_ingot', 'minerals:ingot_gold')
+
 
 -- *** GEMS ***
 
