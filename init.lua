@@ -15,6 +15,7 @@ minerals.modpath = minetest.get_modpath(minerals.modname)
 
 local scripts = {
 	'overrides',
+	'lumps',
 	'nodes',
 	'crafting',
 }
