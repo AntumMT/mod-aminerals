@@ -1,0 +1,8 @@
+default?
+gems?
+moreores?
+ores?
+oresplus?
+rainbow_ore?
+uranium?
+xtraores?
