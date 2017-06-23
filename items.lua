@@ -8,6 +8,8 @@
 --]]
 
 
+-- *** ORE LUMPS ***
+
 -- Coal
 minetest.register_craftitem('minerals:coal_lump', {
 	description = 'Coal Lump',
@@ -40,4 +42,19 @@ minetest.register_craftitem('minerals:iron_lump', {
 minetest.register_craftitem('minerals:tin_lump', {
 	description = 'Tin Lump',
 	inventory_image = 'minerals_tin_lump.png',
+})
+
+
+-- *** GEMS ***
+
+-- Mese
+minetest.register_craftitem('minerals:mese_crystal', {
+	description = 'Mese Crystal',
+	inventory_image = 'minerals_gem_mese.png',
+})
+
+-- Diamond
+minetest.register_craftitem('minerals:diamond', {
+	description = 'Diamond',
+	inventory_image = 'minerals_gem_diamond.png',
 })
