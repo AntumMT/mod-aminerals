@@ -15,6 +15,7 @@ minerals.modpath = minetest.get_modpath(minerals.modname)
 -- List of minerals to disable
 minerals.disabled_minerals = {}
 -- Split comma-separated (& semi-color-sparated) list into table
+-- FIXME: Remove whitespace
 for index, mineral in ipairs(string.split(minetest.settings:get('minerals.disabled_minerals'), ',')) do
 	if string.find(mineral, ';') then
 		-- Semi-colons
