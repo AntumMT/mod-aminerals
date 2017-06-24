@@ -55,8 +55,19 @@
 - minerals_gem_uranium.png
 - minerals_raw_uranium.png
 
+#### WTFPL (from [gems_encrustable] by wowiamdiamonds)
+- minerals_gem_aquamarine.png
+- minerals_gem_garnet.png
+- minerals_gem_opal.png
+- minerals_gem_topaz.png
+- minerals_raw_aquamarine.png
+- minerals_raw_garnet.png
+- minerals_raw_opal.png
+- minerals_raw_topaz.png
+
 
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
+[gems_encrustable]: https://forum.minetest.net/viewtopic.php?t=2596
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98
 [rainbow_ore]: https://forum.minetest.net/viewtopic.php?t=13519
