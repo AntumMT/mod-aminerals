@@ -74,8 +74,14 @@
 #### **[moreores]**
 
 - Calinou ([CC BY-SA 3.0][lic.moreores])
+  - minerals_mithril_block.png
+  - minerals_mithril_ingot.png
   - minerals_mithril_ore.png
+  - minerals_mithril_raw.png
+  - minerals_silver_block.png
+  - minerals_silver_ingot.png
   - minerals_silver_ore.png
+  - minerals_silver_raw.png
 
 
 #### **[ores][]** ([README][lic.ores])

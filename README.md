@@ -17,7 +17,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
   - ![](textures/minerals_gold_ingot.png) gold
   - ![](textures/minerals_iron_raw.png) iron
   - ![](textures/minerals_platinum_ingot.png) platinum
-  - ![](textures/minerals_silver_ore.png) silver
+  - ![](textures/minerals_silver_ingot.png) silver
   - ![](textures/minerals_tin_raw.png) tin
   - ![](textures/minerals_titanium_ingot.png) titanium
 - gems
@@ -63,7 +63,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
   - ![](textures/minerals_geminitinum_ingot.png) geminitinum
   - ![](textures/minerals_glowstone_ore.png) glowstone
   - ![](textures/minerals_mese_gem.png) mese
-  - ![](textures/minerals_mithril_ore.png) mithril
+  - ![](textures/minerals_mithril_ingot.png) mithril
   - ![](textures/minerals_osminum_ingot.png) osminum
   - ![](textures/minerals_rainbow_ingot.png) rainbow
   - ![](textures/minerals_rarium_ingot.png) rarium
