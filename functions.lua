@@ -140,6 +140,8 @@ end
 function minerals.override(old, new)
   minetest.unregister_item(old)
   minetest.register_alias(old, new)
+  
+  minerals.log('"' .. old .. '" overridden by "' .. new .. '"')
 end
 
 
