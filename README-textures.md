@@ -155,6 +155,44 @@
   - minerals_sunstone_shard.png
 
 
+#### **[lottores][lott] (Lord of the Test)**
+
+- fishyWET (CC BY-SA 3.0)
+  - minerals_galvorn_block.png
+  - minerals_galvorn_ingot.png
+  - minerals_geodes_crystals.png
+  - minerals_lead_block_lottores.png
+  - minerals_lead_ingot_lottores.png
+  - minerals_lead_lottores.png
+  - minerals_lead_lump_lottores.png
+  - minerals_limestone_lottores.png
+  - minerals_marble_lottores.png
+  - minerals_mithril_block_lottores.png
+  - minerals_mithril_ingot_lottores.png
+  - minerals_mithril_lump_lottores.png
+  - minerals_pearl.png
+  - minerals_pearl_block.png
+  - minerals_pearl_gem.png
+  - minerals_rough_rock.png
+  - minerals_rough_rock_lump.png
+  - minerals_salt.png
+  - minerals_salt_block.png
+  - minerals_salt_crystals.png
+  - minerals_silver_block_lottores.png
+  - minerals_silver_ingot_lottores.png
+  - minerals_silver_lump_lottores.png
+  - minerals_tilkal.png
+  - minerals_tilkal_ingot.png
+  - minerals_tin_block_lottores.png
+  - minerals_tin_ingot_lottores.png
+  - minerals_tin_lump_lottores.png
+
+- rubberduck (CC0)
+  - minerals_mithril_lottores.png
+  - minerals_silver_lottores.png
+  - minerals_tin_lottores.png
+
+
 #### **[moreores][]**
 
 - Calinou ([CC BY-SA 3.0][lic.moreores])
@@ -326,6 +364,7 @@
 [gems_encrustable]: https://forum.minetest.net/viewtopic.php?t=2596
 [gems_tools]: https://forum.minetest.net/viewtopic.php?t=4294
 [geominer]: https://forum.minetest.net/viewtopic.php?t=17771
+[lott]: https://forum.minetest.net/viewtopic.php?t=5578
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98
 [oresplus]: https://forum.minetest.net/viewtopic.php?t=13120
@@ -337,6 +376,7 @@
 [lic.default]: https://github.com/minetest/minetest_game/blob/master/mods/default/license.txt
 [lic.gems_tools]: https://github.com/captainLAD/gems/blob/master/LICENSE
 [lic.geominer]: https://github.com/CoderForTheBetter/geominer/blob/master/LICENSE.txt
+[lic.lottores]: https://github.com/minetest-LOTR/Lord-of-the-Test/blob/master/mods/lottores/license.txt
 [lic.moreores]: https://github.com/minetest-mods/moreores/blob/master/README.md
 [lic.ores]: https://github.com/Nullsrc/Ores/blob/master/README.txt
 [lic.oresplus]: https://github.com/taikedz/everamzah-oresplus/blob/master/LICENSE

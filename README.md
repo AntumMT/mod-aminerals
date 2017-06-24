@@ -8,102 +8,118 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 
 ## **Minerals list**
 
-- ![](textures/minerals_adamantine.png) adamantine
-- ![](textures/minerals_adamantite_ingot.png) adamantite
-- ![](textures/minerals_agate_shard.png) agate
-- ![](textures/minerals_alabaster.png) alabaster
-- ![](textures/minerals_aluminum.png) aluminum
-- ![](textures/minerals_amethyst_gem.png) amethyst
-- ![](textures/minerals_andesite.png) andesite
-- ![](textures/minerals_anhydrite.png) anhydrite
-- ![](textures/minerals_anthracite_lump.png) anthracite
-- ![](textures/minerals_aquamarine_gem.png) aquamarine
-- ![](textures/minerals_basalt.png) basalt
-- ![](textures/minerals_bauxite.png) bauxite
-- ![](textures/minerals_bedrock.png) bedrock
-- ![](textures/minerals_beryl_shard.png) beryl
-- ![](textures/minerals_bismuth.png) bismuth
-- ![](textures/minerals_bituminous.png) bituminous
-- ![](textures/minerals_borax.png) borax
-- ![](textures/minerals_brass_ingot.png) brass
-- ![](textures/minerals_bronze_ingot.png) bronze
-- ![](textures/minerals_calcite.png) calcite
-- ![](textures/minerals_carbon_steel_ingot.png) carbon steel
-- ![](textures/minerals_cassiterite.png) cassiterite
-- ![](textures/minerals_cast_iron_ingot.png) cast iron
-- ![](textures/minerals_chert.png) chert
-- ![](textures/minerals_chromite.png) chromite
-- ![](textures/minerals_chromium_ingot.png) chromium
-- ![](textures/minerals_cinnabar.png) cinnabar
-- ![](textures/minerals_clay_lump.png) clay
-- ![](textures/minerals_coal_lump.png) coal
-- ![](textures/minerals_cobalt_ingot.png) cobalt
-- ![](textures/minerals_cobble.png) cobble
-- ![](textures/minerals_cobble_mossy.png) cobble (mossy)
-- ![](textures/minerals_conglomerate.png) conglomerate
-- ![](textures/minerals_copper_ingot.png) copper
-- ![](textures/minerals_cryolite.png) cryolite
-- ![](textures/minerals_dacite.png) dacite
-- ![](textures/minerals_desert_sandstone_brick.png) desert sand / sandstone
-- ![](textures/minerals_desert_stone_brick.png) desert stone
-- ![](textures/minerals_diamond_gem.png) diamond
-- ![](textures/minerals_diorite.png) diorite
-- ![](textures/minerals_diorite_geominer.png) diorite (geominer)
-- ![](textures/minerals_dungeon_stone.png) dungeon stone
-- ![](textures/minerals_emerald_gem.png) emerald
-- ![](textures/minerals_emerald_shard.png) emerald (geominer)
-- ![](textures/minerals_garnet_gem.png) garnet
-- ![](textures/minerals_geminitinum_ingot.png) geminitinum
-- ![](textures/minerals_glowstone.png) glowstone
-- ![](textures/minerals_gneiss.png) gneiss
-- ![](textures/minerals_gold_ingot.png) gold
-- ![](textures/minerals_granite.png) granite
-- ![](textures/minerals_granite_geominer.png) granite (geominer)
-- ![](textures/minerals_gravel.png) gravel
-- ![](textures/minerals_hematite_shard.png) hematite
-- ![](textures/minerals_hornfels.png) hornfels
-- ![](textures/minerals_iron_lump.png) iron
-- ![](textures/minerals_larimar_shard.png) larimar
-- ![](textures/minerals_lead_ingot.png) lead
-- ![](textures/minerals_limestone_geominer.png) limestone (geominer)
-- ![](textures/minerals_marble_block_polished.png) marble
-- ![](textures/minerals_marble_black.png) marble (black)
-- ![](textures/minerals_marble_blue.png) marble (blue)
-- ![](textures/minerals_marble_red.png) marble (red)
-- ![](textures/minerals_marble_geominer.png) marble (geominer)
-- ![](textures/minerals_marble_bricks.png) marble (technic mod)
-- ![](textures/minerals_mese_gem.png) mese
-- ![](textures/minerals_mithril_ingot.png) mithril
-- ![](textures/minerals_moonstone_shard.png) moonstone
-- ![](textures/minerals_obsidian.png) obsidian
-- ![](textures/minerals_opal.png) opal
-- ![](textures/minerals_osminum_ingot.png) osminum
-- ![](textures/minerals_peridotite.png) peridotite
-- ![](textures/minerals_platinum_ingot.png) platinum
-- ![](textures/minerals_quartz_gem.png) quartz
-- ![](textures/minerals_rainbow_ingot.png) rainbow
-- ![](textures/minerals_rarium_ingot.png) rarium
-- ![](textures/minerals_ruby_gem.png) ruby
-- ![](textures/minerals_ruby_shard.png) ruby (geominer)
-- ![](textures/minerals_sandstone_brick.png) sand / sandstone
-- ![](textures/minerals_sapphire_gem.png) sapphire
-- ![](textures/minerals_sapphire_shard.png) sapphire (geominer)
-- ![](textures/minerals_scoria.png) scoria
-- ![](textures/minerals_silver_ingot.png) silver
-- ![](textures/minerals_silver_sandstone_brick.png) silver sand / sandstone
-- ![](textures/minerals_slate.png) slate
-- ![](textures/minerals_steel_ingot.png) steel
-- ![](textures/minerals_stone_brick.png) stone
-- ![](textures/minerals_sulfur_lump.png) sulfur
-- ![](textures/minerals_sunstone_shard.png) sunstone
-- ![](textures/minerals_tin_ingot.png) tin
-- ![](textures/minerals_titanium_ingot.png) titanium
-- ![](textures/minerals_topaz_gem.png) topaz
-- ![](textures/minerals_unobtanium_ingot.png) unobtanium
-- ![](textures/minerals_uranium_lump.png) uranium
-- ![](textures/minerals_uranium_ingot.png) uranium (technic)
-- ![](textures/minerals_wrought_iron_ingot.png) wrought iron
-- ![](textures/minerals_zinc_ingot.png) zinc
+- ![](textures/minerals_adamantine.png) adamantine - *ores*
+- ![](textures/minerals_adamantite_ingot.png) adamantite - *xtraores*
+- ![](textures/minerals_agate_shard.png) agate - *geominer*
+- ![](textures/minerals_alabaster.png) alabaster - *ores*
+- ![](textures/minerals_aluminum.png) aluminum - *ores*
+- ![](textures/minerals_amethyst_gem.png) amethyst - *gems_tools*
+- ![](textures/minerals_andesite.png) andesite - *ores*
+- ![](textures/minerals_anhydrite.png) anhydrite - *ores*
+- ![](textures/minerals_anthracite_lump.png) anthracite - *xtraores*
+- ![](textures/minerals_aquamarine_gem.png) aquamarine - *gems_encrustable*
+- ![](textures/minerals_basalt.png) basalt - *ores*
+- ![](textures/minerals_bauxite.png) bauxite - *ores*
+- ![](textures/minerals_bedrock.png) bedrock - *oresplus*
+- ![](textures/minerals_beryl_shard.png) beryl - *geominer*
+- ![](textures/minerals_bismuth.png) bismuth - *ores*
+- ![](textures/minerals_bituminous.png) bituminous - *ores*
+- ![](textures/minerals_borax.png) borax - *ores*
+- ![](textures/minerals_brass_ingot.png) brass - *technic_worldgen*
+- ![](textures/minerals_bronze_ingot.png) bronze - *default*
+- ![](textures/minerals_calcite.png) calcite - *ores*
+- ![](textures/minerals_carbon_steel_ingot.png) carbon steel - *technic_worldgen*
+- ![](textures/minerals_cassiterite.png) cassiterite - *ores*
+- ![](textures/minerals_cast_iron_ingot.png) cast iron - *technic_worldgen*
+- ![](textures/minerals_chert.png) chert - *ores*
+- ![](textures/minerals_chromite.png) chromite - *ores*
+- ![](textures/minerals_chromium_ingot.png) chromium - *technic_worldgen*
+- ![](textures/minerals_cinnabar.png) cinnabar - *ores*
+- ![](textures/minerals_clay_lump.png) clay - *default*
+- ![](textures/minerals_coal_lump.png) coal - *default*
+- ![](textures/minerals_cobalt_ingot.png) cobalt - *xtraores*
+- ![](textures/minerals_cobaltite.png) cobaltite - *ores*
+- ![](textures/minerals_cobble.png) cobble - *default*
+- ![](textures/minerals_cobble_mossy.png) cobble (mossy) - *default*
+- ![](textures/minerals_conglomerate.png) conglomerate - *ores*
+- ![](textures/minerals_copper_ingot.png) copper - *default*
+- ![](textures/minerals_cryolite.png) cryolite - *ores*
+- ![](textures/minerals_dacite.png) dacite - *ores*
+- ![](textures/minerals_desert_sandstone_brick.png) desert sand / sandstone - *default*
+- ![](textures/minerals_desert_stone_brick.png) desert stone - *default*
+- ![](textures/minerals_diamond_gem.png) diamond - *default*
+- ![](textures/minerals_diorite.png) diorite - *ores*
+- ![](textures/minerals_diorite_geominer.png) diorite - *geominer*
+- ![](textures/minerals_dungeon_stone.png) dungeon stone - *geominer*
+- ![](textures/minerals_emerald_gem.png) emerald - *gems_tools*
+- ![](textures/minerals_emerald_gem_oresplus.png) emerald - *oresplus*
+- ![](textures/minerals_emerald_shard.png) emerald - *geominer*
+- ![](textures/minerals_galvorn_ingot.png) galvorn - *lottores*
+- ![](textures/minerals_garnet_gem.png) garnet - *gems_encrustable*
+- ![](textures/minerals_geminitinum_ingot.png) geminitinum - *xtraores*
+- ![](textures/minerals_geodes_crystals.png) geodes - *lottores*
+- ![](textures/minerals_glowstone.png) glowstone - *oresplus*
+- ![](textures/minerals_gneiss.png) gneiss - *geominer*
+- ![](textures/minerals_gold_ingot.png) gold - *default*
+- ![](textures/minerals_granite.png) granite - *technic_worldgen*
+- ![](textures/minerals_granite_geominer.png) granite - *geominer*
+- ![](textures/minerals_gravel.png) gravel - *default*
+- ![](textures/minerals_hematite_shard.png) hematite - *geominer*
+- ![](textures/minerals_hornfels.png) hornfels - *geominer*
+- ![](textures/minerals_iron_lump.png) iron - *default*
+- ![](textures/minerals_larimar_shard.png) larimar - *geominer*
+- ![](textures/minerals_lead_ingot.png) lead - *technic_worldgen*
+- ![](textures/minerals_lead_ingot_lottores.png) lead - *lottores*
+- ![](textures/minerals_limestone_geominer.png) limestone - *geominer*
+- ![](textures/minerals_limestone_lottores.png) limestone - *lottores*
+- ![](textures/minerals_marble_block_polished.png) marble - *xtraores*
+- ![](textures/minerals_marble_black.png) marble (black) - *xtraores*
+- ![](textures/minerals_marble_blue.png) marble (blue) - *xtraores*
+- ![](textures/minerals_marble_red.png) marble (red) - *xtraores*
+- ![](textures/minerals_marble_geominer.png) marble - *geominer*
+- ![](textures/minerals_marble_lottores.png) marble - *lottores*
+- ![](textures/minerals_marble_technic.png) marble - *technic_worldgen*
+- ![](textures/minerals_mese_gem.png) mese - *default*
+- ![](textures/minerals_mithril_ingot.png) mithril - *moreores*
+- ![](textures/minerals_mithril_ingot_lottores.png) mithril - *lottores*
+- ![](textures/minerals_moonstone_shard.png) moonstone - *geominer*
+- ![](textures/minerals_obsidian.png) obsidian - *default*
+- ![](textures/minerals_opal.png) opal - *gems_encrustable*
+- ![](textures/minerals_osminum_ingot.png) osminum - *xtraores*
+- ![](textures/minerals_pearl_gem.png) pearl - *lottores*
+- ![](textures/minerals_peridotite.png) peridotite - *geominer*
+- ![](textures/minerals_platinum_ingot.png) platinum - *xtraores*
+- ![](textures/minerals_quartz_gem.png) quartz - *quartz*
+- ![](textures/minerals_rainbow_ingot.png) rainbow - *rainbow_ore*
+- ![](textures/minerals_rainbow_block_xtraores.png) rainbow - *xtraores*
+- ![](textures/minerals_rarium_ingot.png) rarium - *xtraores*
+- ![](textures/minerals_rough_rock_lump.png) rough_rock - *lottores*
+- ![](textures/minerals_ruby_gem.png) ruby - *gems_tools*
+- ![](textures/minerals_ruby_shard.png) ruby - *geominer*
+- ![](textures/minerals_salt.png) salt - *lottores*
+- ![](textures/minerals_sandstone_brick.png) sand / sandstone - *default*
+- ![](textures/minerals_sapphire_gem.png) sapphire - *gems_tools*
+- ![](textures/minerals_sapphire_shard.png) sapphire - *geominer*
+- ![](textures/minerals_scoria.png) scoria - *geominer*
+- ![](textures/minerals_silver_ingot.png) silver - *moreores*
+- ![](textures/minerals_silver_ingot_lottores.png) silver - *lottores*
+- ![](textures/minerals_silver_sandstone_brick.png) silver sand / sandstone - *default*
+- ![](textures/minerals_slate.png) slate - *geominer*
+- ![](textures/minerals_stainless_steel_block.png) stainless steel - *technic_worldgen*
+- ![](textures/minerals_steel_ingot.png) steel - *default*
+- ![](textures/minerals_stone_brick.png) stone - *default*
+- ![](textures/minerals_sulfur_lump.png) sulfur - *technic_worldgen*
+- ![](textures/minerals_sunstone_shard.png) sunstone - *geominer*
+- ![](textures/minerals_tilkal_ingot.png) tilkal - *lottores*
+- ![](textures/minerals_tin_ingot.png) tin - *default*
+- ![](textures/minerals_tin_ingot_lottores.png) tin - *lottores*
+- ![](textures/minerals_titanium_ingot.png) titanium - *xtraores*
+- ![](textures/minerals_topaz_gem.png) topaz - *gems_encrustable*
+- ![](textures/minerals_unobtanium_ingot.png) unobtanium - *xtraores*
+- ![](textures/minerals_uranium_lump.png) uranium - *uranium*
+- ![](textures/minerals_uranium_ingot.png) uranium - *technic_worldgen*
+- ![](textures/minerals_wrought_iron_ingot.png) wrought iron - *technic_worldgen*
+- ![](textures/minerals_zinc_ingot.png) zinc - *technic_worldgen*
 
 
 ## **Mods list**
