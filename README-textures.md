@@ -83,12 +83,21 @@
 - minerals_raw_ruby.png
 - minerals_raw_sapphire.png
 
+#### Textures from [oresplus][] by everamzah
+- By Gambit ([GPL 3.0 / WTFPL???][lic.oresplus])
+  - minerals_block_emerald_oresplus.png
+  - minerals_gem_emerald_oresplus.png
+  - minerals_ore_bedrock.png
+  - minerals_ore_emerald_oresplus.png
+  - minerals_ore_glowstone.png
+
 
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
 [gems_encrustable]: https://forum.minetest.net/viewtopic.php?t=2596
 [gems_tools]: https://forum.minetest.net/viewtopic.php?t=4294
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98
+[oresplus]: https://forum.minetest.net/viewtopic.php?t=13120
 [rainbow_ore]: https://forum.minetest.net/viewtopic.php?t=13519
 [uranium]: https://forum.minetest.net/viewtopic.php?t=2234
 
@@ -96,4 +105,5 @@
 [lic.gems_tools]: https://github.com/captainLAD/gems/blob/master/LICENSE
 [lic.moreores]: https://github.com/minetest-mods/moreores/blob/master/README.md
 [lic.ores]: https://github.com/Nullsrc/Ores/blob/master/README.txt
+[lic.oresplus]: https://github.com/taikedz/everamzah-oresplus/blob/master/LICENSE
 [lic.rainbow_ore]: https://github.com/FsxShader2012/rainbow_ore/blob/master/README.md
