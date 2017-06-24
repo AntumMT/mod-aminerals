@@ -300,7 +300,7 @@
   - minerals_sulfur.png
   - minerals_sulfur_dust.png
   - minerals_sulfur_lump.png
-  - minerals_uranium_block.png
+  - minerals_uranium_block_technic.png
   - minerals_uranium_ingot.png
   - minerals_uranium_lump_technic.png
   - minerals_uranium_technic.png
