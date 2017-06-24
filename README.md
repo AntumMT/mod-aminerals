@@ -37,6 +37,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_coal_lump.png) coal
 - ![](textures/minerals_cobalt_ingot.png) cobalt
 - ![](textures/minerals_cobble.png) cobble
+- ![](textures/minerals_cobble_mossy.png) cobble (mossy)
 - ![](textures/minerals_conglomerate.png) conglomerate
 - ![](textures/minerals_copper_ingot.png) copper
 - ![](textures/minerals_cryolite.png) cryolite
@@ -61,7 +62,6 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_marble_bricks.png) marble (technic mod)
 - ![](textures/minerals_mese_gem.png) mese
 - ![](textures/minerals_mithril_ingot.png) mithril
-- ![](textures/minerals_mossycobble.png) mossy cobble
 - ![](textures/minerals_obsidian.png) obsidian
 - ![](textures/minerals_opal.png) opal
 - ![](textures/minerals_osminum_ingot.png) osminum

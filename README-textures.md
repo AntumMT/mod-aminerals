@@ -47,7 +47,7 @@
 
 - Neuromancer (CC BY-SA 2.0)
   - minerals_cobble.png
-  - minerals_mossycobble.png
+  - minerals_cobble_mossy.png
 
 - paramat (CC BY-SA 3.0)
   - minerals_desert_stone_block.png
