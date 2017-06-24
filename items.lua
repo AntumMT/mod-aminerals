@@ -68,14 +68,10 @@ end
 
 -- *** GEMS ***
 
--- Mese
-minetest.register_craftitem('minerals:gem_mese', {
+minerals.register_gem('mese', {
 	description = 'Mese Crystal',
-	inventory_image = 'minerals_gem_mese.png',
 })
 
--- Diamond
-minetest.register_craftitem('minerals:gem_diamond', {
+minerals.register_gem('diamond', {
 	description = 'Diamond',
-	inventory_image = 'minerals_gem_diamond.png',
 })
