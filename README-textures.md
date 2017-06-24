@@ -1,7 +1,7 @@
 # Licensing for Textures
 
 
-#### From [default][]
+#### **[default][]**
 
 - BlockMen (CC BY-SA 3.0)
   - minerals_gem_diamond.png
@@ -37,10 +37,11 @@
   - minerals_raw_coal.png
 
 
-#### [CC BY-SA][lic.rainbow_ore] (from [rainbow_ore][])
-- minerals_block_rainbow.png
-- minerals_ingot_rainbow.png
-- minerals_ore_rainbow.png
+#### **[rainbow_ore][]**
+- KingSmarty / FsxShader2012 ([CC BY-SA][lic.rainbow_ore])
+  - minerals_block_rainbow.png
+  - minerals_ingot_rainbow.png
+  - minerals_ore_rainbow.png
 
 #### [CC BY-SA 3.0][lic.moreores] (from [moreores][])
 - minerals_ore_mithril.png
