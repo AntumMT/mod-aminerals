@@ -196,6 +196,29 @@ function minerals.override(old, new)
 end
 
 
+-- Overrides a node/item using a common suffix
+function minerals.override_type(name, modname, suffix)
+	local old = name
+	local new = name
+	
+	if modname then
+		old = modname .. ':' .. old
+	end
+	
+	-- Prepend minerals mod name
+	if not string.find(new, minerals.modname .. ':') then
+		new = minerals.modname .. ':' .. new
+	end
+	
+	if suffix then
+		old = old .. '_' .. suffix
+		new = new .. '_' .. suffix
+	end
+	
+	minerals.override(old, new)
+end
+
+
 -- Checks for existing global or mod path
 function minerals.mod_exists(modname)
 	if minetest.global_exists(modname) or minetest.get_modpath(modname) then

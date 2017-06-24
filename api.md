@@ -51,6 +51,10 @@
 - Overrides a node/item & creates aliases of an existing node/item
 - Return type: nil
 
+### ***minerals.override_type(name, modname, suffix)***
+- Overrides a node/item using a common suffix
+- Return type: nil
+
 ### ***minerals.mod_exists(modname)***
 - Checks for existing global or mod path
 - Return type: bool
