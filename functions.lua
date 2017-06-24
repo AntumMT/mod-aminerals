@@ -18,21 +18,65 @@ end
 -- Registers a new mineral lump & logs message
 function minerals.register_lump(name, groups)
 	local suffix = name .. '_lump'
-	local canonical = minerals.modname .. ':' .. suffix
-	minetest.register_craftitem(canonical, {
+	local fullname = minerals.modname .. ':' .. suffix
+	minetest.register_craftitem(fullname, {
 		description = minerals.titleize(name) .. ' Lump',
 		inventory_image = minerals.modname .. suffix .. '.png',
 		groups = groups,
 	})
-	minetest.register_alias(suffix, canonical)
-	minetest.register_alias('lump_of_' .. name, canonical)
+	minetest.register_alias(suffix, fullname)
+	minetest.register_alias('lump_of_' .. name, fullname)
 	
-	minerals.log('Registered mineral lump "' .. canonical .. '"')
+	minerals.log('Registered mineral lump "' .. fullname .. '"')
 end
 
 -- Registers a new mineral & logs message
 function minerals.register_mineral(name, def)
-	minetest.register_node(name, def)
+	local fullname = minerals.modname .. ':' .. name
+	
+	-- Default description
+	if def.description == nil then
+		def.description = minerals.titleize(name) .. ' Ore'
+	end
+	
+	-- Default texture
+	if def.tiles == nil then
+		def.tiles = {'default_stone.png^' .. minerals.modname .. '_' .. name .. '.png'}
+	end
+	
+	-- Default drop
+	if def.drop == nil then
+		def.drop = minerals.modname .. ':' .. name
+		
+		-- Default drop type is 'lump' (use empty string to override)
+		if def.suffix == nil then
+			def.suffix = '_lump'
+		end
+		
+		if def.suffix then
+			def.drop = def.drop .. def.suffix
+		end
+	end
+	
+	-- Number of items dropped
+	if def.drop_count ~= nil then
+		def.drop = def.drop .. ' ' .. tostring(def.drop_count)
+	end
+	
+	-- Default sounds
+	if def.sounds == nil then
+		def.sounds = default.node_sound_stone_defaults()
+	end
+	
+	minetest.register_node(fullname, {
+		description = def.description,
+		tiles = def.tiles,
+		groups = def.groups,
+		drop = def.drop,
+		sounds = def.sounds,
+	})
+	minetest.register_alias(name .. '_ore', fullname)
+	
 	minerals.log('Registered mineral "' .. name .. '"')
 end
 
