@@ -229,7 +229,7 @@
 #### **[uranium][]**
 
 - LandMine (WTFPL)
-  - minerals_uranium_gem.png
+  - minerals_uranium_lump.png
   - minerals_uranium_ore.png
 
 
