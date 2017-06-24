@@ -75,6 +75,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - *default* ([minetest_game][])
 - *[gems][gems_encrustable]*  (Encrustable Gems) by wowiamdiamonds ([GitHub][gh.gems_encrustable])
 - *[gems][gems_tools]*  (Gem Tools) by LionLAD/captainLAD ([GitHub][gh.gems_tools])
+- *[geominer][]*  by Devy ([GitHub][gh.geominer])
 - *[lottores][lott]*  by fishyWET ([GitHub][gh.lott])
 - *[moreores][]*  by Calinou ([GitHub][gh.moreores])
 - *[ores][]*  by Enke ([GitHub][gh.ores])
@@ -130,6 +131,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 
 [gems_encrustable]: https://forum.minetest.net/viewtopic.php?t=2596
 [gems_tools]: https://forum.minetest.net/viewtopic.php?t=4294
+[geominer]: https://forum.minetest.net/viewtopic.php?t=17771
 [lott]: https://forum.minetest.net/viewtopic.php?t=5578
 [minetest_game]: https://github.com/minetest/minetest_game
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
@@ -143,6 +145,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 
 [gh.gems_encrustable]: https://github.com/wowiamdiamonds/gems
 [gh.gems_tools]: https://github.com/captainLAD/gems
+[gh.geominer]: https://github.com/CoderForTheBetter/geominer
 [gh.lott]: https://github.com/minetest-LOTR/Lord-of-the-Test
 [gh.moreores]: https://github.com/minetest-mods/moreores
 [gh.ores]: https://github.com/Nullsrc/Ores
