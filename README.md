@@ -15,7 +15,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_amethyst_gem.png) amethyst
 - ![](textures/minerals_andesite_ore.png) andesite
 - ![](textures/minerals_anhydrite_ore.png) anhydrite
-- ![](textures/minerals_anthracite_raw.png) anthracite
+- ![](textures/minerals_anthracite_lump.png) anthracite
 - ![](textures/minerals_aquamarine_gem.png) aquamarine
 - ![](textures/minerals_basalt_ore.png) basalt
 - ![](textures/minerals_bauxite_ore.png) bauxite
@@ -30,7 +30,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_chromite_ore.png) chromite
 - ![](textures/minerals_cinnabar_ore.png) cinnabar
 - ![](textures/minerals_clay_lump.png) clay
-- ![](textures/minerals_coal_raw.png) coal
+- ![](textures/minerals_coal_lump.png) coal
 - ![](textures/minerals_cobalt_ingot.png) cobalt
 - ![](textures/minerals_cobble.png) cobble
 - ![](textures/minerals_conglomerate_ore.png) conglomerate
@@ -47,7 +47,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_glowstone_ore.png) glowstone
 - ![](textures/minerals_gold_ingot.png) gold
 - ![](textures/minerals_gravel.png) gravel
-- ![](textures/minerals_iron_raw.png) iron
+- ![](textures/minerals_iron_lump.png) iron
 - ![](textures/minerals_marble_block_polished.png) marble
 - ![](textures/minerals_marble_black_ore.png) marble (black)
 - ![](textures/minerals_marble_blue_ore.png) marble (blue)
