@@ -83,6 +83,10 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_mithril_ingot.png) mithril - *moreores*
 - ![](textures/minerals_mithril_ingot_lottores.png) mithril - *lottores*
 - ![](textures/minerals_moonstone_shard.png) moonstone - *geominer*
+- ![](textures/minerals_nether_brick.png) nether brick - *nether*
+- ![](textures/minerals_nether_glowstone.png) nether glowstone - *nether*
+- ![](textures/minerals_nether_rack.png) nether rack - *nether*
+- ![](textures/minerals_nether_sand.png) nether sand - *nether*
 - ![](textures/minerals_obsidian.png) obsidian - *default*
 - ![](textures/minerals_opal.png) opal - *gems_encrustable*
 - ![](textures/minerals_osminum_ingot.png) osminum - *xtraores*

@@ -206,6 +206,19 @@
   - minerals_silver_lump.png
 
 
+#### **[nether][]** ([README][lic.nether])
+
+- BlockMen (CC BY-SA 3.0)
+  - minerals_nether_glowstone.png
+
+- PilzAdam (CC BY-SA 3.0)
+  - minerals_nether_brick.png
+  - minerals_nether_sand.png
+
+- Zeg9 (CC BY-SA 3.0)
+  - minerals_nether_rack.png
+
+
 #### **[ores][]** ([README][lic.ores])
 
 - Enke (WTFPL)
@@ -366,6 +379,7 @@
 [geominer]: https://forum.minetest.net/viewtopic.php?t=17771
 [lott]: https://forum.minetest.net/viewtopic.php?t=5578
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
+[nether]: https://forum.minetest.net/viewtopic.php?t=5790
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98
 [oresplus]: https://forum.minetest.net/viewtopic.php?t=13120
 [quartz]: https://forum.minetest.net/viewtopic.php?t=5682
@@ -378,6 +392,7 @@
 [lic.geominer]: https://github.com/CoderForTheBetter/geominer/blob/master/LICENSE.txt
 [lic.lottores]: https://github.com/minetest-LOTR/Lord-of-the-Test/blob/master/mods/lottores/license.txt
 [lic.moreores]: https://github.com/minetest-mods/moreores/blob/master/README.md
+[lic.nether]: https://github.com/PilzAdam/nether/blob/master/README.md
 [lic.ores]: https://github.com/Nullsrc/Ores/blob/master/README.txt
 [lic.oresplus]: https://github.com/taikedz/everamzah-oresplus/blob/master/LICENSE
 [lic.quartz]: https://github.com/minetest-mods/quartz/blob/master/README.txt
