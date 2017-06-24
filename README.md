@@ -8,62 +8,62 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 
 ## **Minerals list**
 
-- ![](textures/minerals_adamantine_ore.png) adamantine
+- ![](textures/minerals_adamantine.png) adamantine
 - ![](textures/minerals_adamantite_ingot.png) adamantite
-- ![](textures/minerals_alabaster_ore.png) alabaster
-- ![](textures/minerals_aluminum_ore.png) aluminum
+- ![](textures/minerals_alabaster.png) alabaster
+- ![](textures/minerals_aluminum.png) aluminum
 - ![](textures/minerals_amethyst_gem.png) amethyst
-- ![](textures/minerals_andesite_ore.png) andesite
-- ![](textures/minerals_anhydrite_ore.png) anhydrite
+- ![](textures/minerals_andesite.png) andesite
+- ![](textures/minerals_anhydrite.png) anhydrite
 - ![](textures/minerals_anthracite_lump.png) anthracite
 - ![](textures/minerals_aquamarine_gem.png) aquamarine
-- ![](textures/minerals_basalt_ore.png) basalt
-- ![](textures/minerals_bauxite_ore.png) bauxite
-- ![](textures/minerals_bedrock_ore.png) bedrock
-- ![](textures/minerals_bismuth_ore.png) bismuth
-- ![](textures/minerals_bituminous_ore.png) bituminous
-- ![](textures/minerals_borax_ore.png) borax
+- ![](textures/minerals_basalt.png) basalt
+- ![](textures/minerals_bauxite.png) bauxite
+- ![](textures/minerals_bedrock.png) bedrock
+- ![](textures/minerals_bismuth.png) bismuth
+- ![](textures/minerals_bituminous.png) bituminous
+- ![](textures/minerals_borax.png) borax
 - ![](textures/minerals_brass_ingot.png) brass
 - ![](textures/minerals_bronze_ingot.png) bronze
-- ![](textures/minerals_calcite_ore.png) calcite
+- ![](textures/minerals_calcite.png) calcite
 - ![](textures/minerals_carbon_steel_ingot.png) carbon steel
-- ![](textures/minerals_cassiterite_ore.png) cassiterite
+- ![](textures/minerals_cassiterite.png) cassiterite
 - ![](textures/minerals_cast_iron_ingot.png) cast iron
-- ![](textures/minerals_chert_ore.png) chert
-- ![](textures/minerals_chromite_ore.png) chromite
+- ![](textures/minerals_chert.png) chert
+- ![](textures/minerals_chromite.png) chromite
 - ![](textures/minerals_chromium_ingot.png) chromium
-- ![](textures/minerals_cinnabar_ore.png) cinnabar
+- ![](textures/minerals_cinnabar.png) cinnabar
 - ![](textures/minerals_clay_lump.png) clay
 - ![](textures/minerals_coal_lump.png) coal
 - ![](textures/minerals_cobalt_ingot.png) cobalt
 - ![](textures/minerals_cobble.png) cobble
-- ![](textures/minerals_conglomerate_ore.png) conglomerate
+- ![](textures/minerals_conglomerate.png) conglomerate
 - ![](textures/minerals_copper_ingot.png) copper
-- ![](textures/minerals_cryolite_ore.png) cryolite
-- ![](textures/minerals_dacite_ore.png) dacite
+- ![](textures/minerals_cryolite.png) cryolite
+- ![](textures/minerals_dacite.png) dacite
 - ![](textures/minerals_desert_sandstone_brick.png) desert sand / sandstone
 - ![](textures/minerals_desert_stone_brick.png) desert stone
 - ![](textures/minerals_diamond_gem.png) diamond
-- ![](textures/minerals_diorite_ore.png) diorite
+- ![](textures/minerals_diorite.png) diorite
 - ![](textures/minerals_emerald_gem.png) emerald
 - ![](textures/minerals_garnet_gem.png) garnet
 - ![](textures/minerals_geminitinum_ingot.png) geminitinum
-- ![](textures/minerals_glowstone_ore.png) glowstone
+- ![](textures/minerals_glowstone.png) glowstone
 - ![](textures/minerals_gold_ingot.png) gold
 - ![](textures/minerals_granite.png) granite
 - ![](textures/minerals_gravel.png) gravel
 - ![](textures/minerals_iron_lump.png) iron
 - ![](textures/minerals_lead_ingot.png) lead
 - ![](textures/minerals_marble_block_polished.png) marble
-- ![](textures/minerals_marble_black_ore.png) marble (black)
-- ![](textures/minerals_marble_blue_ore.png) marble (blue)
-- ![](textures/minerals_marble_red_ore.png) marble (red)
+- ![](textures/minerals_marble_black.png) marble (black)
+- ![](textures/minerals_marble_blue.png) marble (blue)
+- ![](textures/minerals_marble_red.png) marble (red)
 - ![](textures/minerals_marble_bricks.png) marble (technic mod)
 - ![](textures/minerals_mese_gem.png) mese
 - ![](textures/minerals_mithril_ingot.png) mithril
 - ![](textures/minerals_mossycobble.png) mossy cobble
 - ![](textures/minerals_obsidian.png) obsidian
-- ![](textures/minerals_opal_ore.png) opal
+- ![](textures/minerals_opal.png) opal
 - ![](textures/minerals_osminum_ingot.png) osminum
 - ![](textures/minerals_platinum_ingot.png) platinum
 - ![](textures/minerals_quartz_gem.png) quartz

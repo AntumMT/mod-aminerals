@@ -7,10 +7,10 @@
   - minerals_clay_brick.png
   - minerals_diamond_gem.png
   - minerals_gold_ingot.png
-  - minerals_mese_ore.png
+  - minerals_mese.png
 
 - Calinou (CC BY-SA 3.0)
-  - minerals_copper_ore.png
+  - minerals_copper.png
 
 - Cisoun's texture pack (CC BY-SA 3.0)
   - minerals_stone.png
@@ -25,7 +25,7 @@
   - minerals_iron_lump.png
 
 - InfinityProject (CC BY-SA 3.0)
-  - minerals_diamond_ore.png
+  - minerals_diamond.png
 
 - jojoa1997 (CC BY-SA 3.0)
   - minerals_obsidian.png
@@ -40,10 +40,10 @@
   - minerals_copper_block.png
   - minerals_gold_block.png
   - minerals_steel_block.png
+  - minerals_tin.png
   - minerals_tin_block.png
   - minerals_tin_ingot.png
   - minerals_tin_lump.png
-  - minerals_tin_ore.png
 
 - Neuromancer (CC BY-SA 2.0)
   - minerals_cobble.png
@@ -65,7 +65,7 @@
   - minerals_stone_brick.png
 
 - PilzAdam (CC BY-SA 3.0)
-  - minerals_gold_ore.png
+  - minerals_gold.png
 
 - sofar (WTFPL)
   - minerals_gravel.png
@@ -79,9 +79,9 @@
 
 - ???
   - minerals_clay.png
+  - minerals_coal.png
   - minerals_coal_lump.png
-  - minerals_coal_ore.png
-  - minerals_iron_ore.png
+  - minerals_iron.png
   - minerals_sandstone.png
   - minerals_steel_ingot.png
 
@@ -89,103 +89,103 @@
 #### **[gems][gems_encrustable] (Encrustable Gems)**
 
 - wowiamdiamonds (WTFPL)
+  - minerals_aquamarine.png
   - minerals_aquamarine_gem.png
-  - minerals_aquamarine_ore.png
+  - minerals_garnet.png
   - minerals_garnet_gem.png
-  - minerals_garnet_ore.png
+  - minerals_opal.png
   - minerals_opal_gem.png
-  - minerals_opal_ore.png
+  - minerals_topaz.png
   - minerals_topaz_gem.png
-  - minerals_topaz_ore.png
 
 
 #### **[gems][gems_tools] (Gem Tools)**
 
 - LionLAD / captainLAD ([GPL 3.0][lic.gems_tools])
+  - minerals_amethyst.png
   - minerals_amethyst_block.png
   - minerals_amethyst_gem.png
   - minerals_amethyst_lump.png
-  - minerals_amethyst_ore.png
+  - minerals_emerald.png
   - minerals_emerald_block.png
   - minerals_emerald_gem.png
   - minerals_emerald_lump.png
-  - minerals_emerald_ore.png
+  - minerals_ruby.png
   - minerals_ruby_block.png
   - minerals_ruby_gem.png
   - minerals_ruby_lump.png
-  - minerals_ruby_ore.png
+  - minerals_sapphire.png
   - minerals_sapphire_block.png
   - minerals_sapphire_gem.png
   - minerals_sapphire_lump.png
-  - minerals_sapphire_ore.png
 
 
 #### **[moreores]**
 
 - Calinou ([CC BY-SA 3.0][lic.moreores])
+  - minerals_mithril.png
   - minerals_mithril_block.png
   - minerals_mithril_ingot.png
   - minerals_mithril_lump.png
-  - minerals_mithril_ore.png
+  - minerals_silver.png
   - minerals_silver_block.png
   - minerals_silver_ingot.png
   - minerals_silver_lump.png
-  - minerals_silver_ore.png
 
 
 #### **[ores][]** ([README][lic.ores])
 
 - Enke (WTFPL)
-  - minerals_alabaster_ore.png
-  - minerals_aluminum_ore.png
-  - minerals_andesite_ore.png
-  - minerals_anhydrite_ore.png
-  - minerals_basalt_ore.png
-  - minerals_bauxite_ore.png
-  - minerals_cobaltite_ore.png
-  - minerals_conglomerate_ore.png
-  - minerals_cryolite_ore.png
-  - minerals_dacite_ore.png
+  - minerals_alabaster.png
+  - minerals_aluminum.png
+  - minerals_andesite.png
+  - minerals_anhydrite.png
+  - minerals_basalt.png
+  - minerals_bauxite.png
+  - minerals_cobaltite.png
+  - minerals_conglomerate.png
+  - minerals_cryolite.png
+  - minerals_dacite.png
 
 - John1 (WTFPL)
-  - minerals_adamantine_ore.png
-  - minerals_bismuth_ore.png
-  - minerals_bituminous_ore.png
-  - minerals_borax_ore.png
-  - minerals_calcite_ore.png
-  - minerals_cassiterite_ore.png
-  - minerals_chert_ore.png
-  - minerals_chromite_ore.png
-  - minerals_cinnabar_ore.png
+  - minerals_adamantine.png
+  - minerals_bismuth.png
+  - minerals_bituminous.png
+  - minerals_borax.png
+  - minerals_calcite.png
+  - minerals_cassiterite.png
+  - minerals_chert.png
+  - minerals_chromite.png
+  - minerals_cinnabar.png
 
 - ???
-  - minerals_diorite_ore.png
+  - minerals_diorite.png
 
 
 #### **[oresplus][]**
 
 - By Gambit ([GPL 3.0 / WTFPL???][lic.oresplus])
-  - minerals_bedrock_ore.png
+  - minerals_bedrock.png
   - minerals_emerald_block_oresplus.png
   - minerals_emerald_gem_oresplus.png
   - minerals_emerald_ore_oresplus.png
-  - minerals_glowstone_ore.png
+  - minerals_glowstone.png
 
 
 #### **[quartz][]**
 
 - By Evergreen/EvergreenTree ([MIT][lic.quartz])
+  - minerals_quartz.png
   - minerals_quartz_block.png
   - minerals_quartz_gem.png
-  - minerals_quartz_ore.png
 
 
 #### **[rainbow_ore][]**
 
 - KingSmarty / FsxShader2012 ([CC BY-SA][lic.rainbow_ore])
+  - minerals_rainbow.png
   - minerals_rainbow_block.png
   - minerals_rainbow_ingot.png
-  - minerals_rainbow_ore.png
 
 
 #### **[technic_worldgen][]**
@@ -229,61 +229,61 @@
 #### **[uranium][]**
 
 - LandMine (WTFPL)
+  - minerals_uranium.png
   - minerals_uranium_lump.png
-  - minerals_uranium_ore.png
 
 
 #### **[xtraores][]**
 
 - By davidthecreator - WTFPL
+  - minerals_adamantite.png
   - minerals_adamantite_block_brick.png
   - minerals_adamantite_ingot.png
   - minerals_adamantite_lump.png
-  - minerals_adamantite_ore.png
+  - minerals_anthracite.png
   - minerals_anthracite_lump.png
-  - minerals_anthracite_ore.png
+  - minerals_cobalt.png
   - minerals_cobalt_block_brick.png
   - minerals_cobalt_ingot.png
   - minerals_cobalt_lump.png
-  - minerals_cobalt_ore.png
+  - minerals_geminitinum.png
   - minerals_geminitinum_block_brick.png
   - minerals_geminitinum_ingot.png
   - minerals_geminitinum_lump.png
-  - minerals_geminitinum_ore.png
+  - minerals_marble.png
   - minerals_marble_block_brick.png
   - minerals_marble_block_polished.png
-  - minerals_marble_ore.png
+  - minerals_marble_black.png
   - minerals_marble_black_block_brick.png
   - minerals_marble_black_block_polished.png
-  - minerals_marble_black_ore.png
+  - minerals_marble_blue.png
   - minerals_marble_blue_block_brick.png
   - minerals_marble_blue_block_polished.png
-  - minerals_marble_blue_ore.png
+  - minerals_marble_red.png
   - minerals_marble_red_block_brick.png
   - minerals_marble_red_block_polished.png
-  - minerals_marble_red_ore.png
+  - minerals_osminum.png
   - minerals_osminum_block_brick.png
   - minerals_osminum_ingot.png
   - minerals_osminum_lump.png
-  - minerals_osminum_ore.png
+  - minerals_platinum.png
   - minerals_platinum_block_brick.png
   - minerals_platinum_ingot.png
   - minerals_platinum_lump.png
-  - minerals_platinum_ore.png
   - minerals_rainbow_block_xtraores.png
+  - minerals_rarium.png
   - minerals_rarium_block_brick.png
   - minerals_rarium_block_brick_Kopija.png
   - minerals_rarium_ingot.png
   - minerals_rarium_lump.png
-  - minerals_rarium_ore.png
+  - minerals_titanium.png
   - minerals_titanium_block_brick.png
   - minerals_titanium_ingot.png
   - minerals_titanium_lump.png
-  - minerals_titanium_ore.png
+  - minerals_unobtanium.png
   - minerals_unobtanium_block_brick.png
   - minerals_unobtanium_ingot.png
   - minerals_unobtanium_lump.png
-  - minerals_unobtanium_ore.png
 
 
 
