@@ -8,8 +8,6 @@
 --]]
 
 
--- FIXME: Use setting value like 'minerals.override_minerals'
-local override = true
 local exists_default = minerals.mod_exists('default')
 
 
@@ -28,7 +26,7 @@ if minerals.enabled('coal') then
 		},
 	})
 	
-	if override then
+	if minerals.override_others then
 		if exists_default then
 			minerals.override('default:coal_lump', 'minerals:coal_lump')
 		end
@@ -53,7 +51,7 @@ for index, lump in ipairs(lumps) do
 	if minerals.enabled(lump) then
 		minerals.register_lump(lump, {})
 		
-		if override then
+		if minerals.override_others then
 			local fullname = minerals.modname .. ':' .. lump .. '_lump'
 			
 			if exists_default then
@@ -79,7 +77,7 @@ for index, ingot in ipairs(ingots) do
 	if minerals.enabled(ingot) then
 		minerals.register_ingot(ingot, {})
 		
-		if override then
+		if minerals.override_others then
 			local fullname = minerals.modname .. ':' .. ingot .. '_ingot'
 			
 			if exists_default then
@@ -106,7 +104,7 @@ minerals.register_gem('diamond', {
 	description = 'Diamond',
 })
 
-if override and exists_default then
+if minerals.override_others and exists_default then
 	minerals.override('default:mese_crystal', 'minerals:mese_gem')
 	minerals.override('default:diamond', 'minerals:diamond_gem')
 end

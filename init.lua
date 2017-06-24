@@ -12,6 +12,13 @@ minerals = {}
 minerals.modname = minetest.get_current_modname()
 minerals.modpath = minetest.get_modpath(minerals.modname)
 
+-- Set to 'false' to prevent overriding minerals from other mods
+minerals.override_others = minetest.settings:get_bool('minerals.override_others')
+if minerals.override_others == nil then
+	-- Default value is 'true'
+	minerals.override_others = true
+end
+
 -- List of minerals to disable
 minerals.disabled_minerals = {}
 local disabled_list = minetest.settings:get('minerals.disabled_minerals')

@@ -1,2 +1,5 @@
 # Comma-separated list of minerals to disable.
-disabled_minerals (Minerals to disable) string
+minerals.disabled_minerals (Minerals to disable) string
+
+# Set to 'false' to prevent overriding minerals from other mods.
+minerals.override_others (Override other minerals) bool true

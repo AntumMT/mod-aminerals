@@ -39,8 +39,6 @@ overrides:
 ]]
 
 
--- FIXME: Use setting value like 'minerals.override_minerals'
-local override = true
 local exists_default = minerals.mod_exists('default')
 
 
@@ -61,7 +59,7 @@ for index, mineral in ipairs(ores) do
 			groups = groups,
 		})
 		
-		if override then
+		if minerals.override_others then
 			local fullname = minerals.modname .. ':' .. ore
 			
 			if exists_default then
@@ -96,7 +94,7 @@ for index, mineral in ipairs(gems) do
 			suffix = '_gem',
 		})
 		
-		if override then
+		if minerals.override_others then
 			local fullname = minerals.modname .. ':' .. gem
 			
 			if exists_default then
@@ -123,7 +121,7 @@ minerals.register_mineral('clay', {
 	sounds = default.node_sound_dirt_defaults(),
 })
 
-if override then
+if minerals.override_others then
 	local fullname = minerals.modname .. ':clay'
 	
 	if exists_default then
