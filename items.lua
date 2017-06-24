@@ -109,3 +109,20 @@ if minerals.override_others and exists_default then
 	minerals.override('default:mese_crystal', 'minerals:mese_gem')
 	minerals.override('default:diamond', 'minerals:diamond_gem')
 end
+
+
+-- *** BRICKS ***
+
+local bricks = {
+	'clay',
+}
+
+for index, brick in ipairs(bricks) do
+	minerals.register(brick, {
+		description = minerals.titleize(brick) .. ' Brick',
+		suffix = '_brick',
+		inventory_image = minerals.get_texture(brick, 'brick'),
+	})
+	
+	minerals.override_type(brick, 'default', 'brick')
+end
