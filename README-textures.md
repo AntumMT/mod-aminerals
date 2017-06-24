@@ -7,11 +7,6 @@
 - minerals_ingot_bronze.png
 - minerals_ingot_copper.png
 - minerals_ingot_gold.png
-- minerals_lump_coal.png
-- minerals_lump_copper.png
-- minerals_lump_gold.png
-- minerals_lump_iron.png
-- minerals_lump_tin.png
 - minerals_ore_coal.png
 - minerals_ore_copper.png
 - minerals_ore_diamond.png
@@ -19,6 +14,11 @@
 - minerals_ore_iron.png
 - minerals_ore_mese.png
 - minerals_ore_tin.png
+- minerals_raw_coal.png
+- minerals_raw_copper.png
+- minerals_raw_gold.png
+- minerals_raw_iron.png
+- minerals_raw_tin.png
 
 #### [CC BY-SA][lic.rainbow_ore] (from [rainbow_ore][])
 - minerals_block_rainbow.png
@@ -74,14 +74,14 @@
 - minerals_gem_emerald.png
 - minerals_gem_ruby.png
 - minerals_gem_sapphire.png
-- minerals_lump_amethyst.png
-- minerals_lump_emerald.png
-- minerals_lump_ruby.png
-- minerals_lump_sapphire.png
 - minerals_ore_amethyst.png
 - minerals_ore_emerald.png
 - minerals_ore_ruby.png
 - minerals_ore_sapphire.png
+- minerals_raw_amethyst.png
+- minerals_raw_emerald.png
+- minerals_raw_ruby.png
+- minerals_raw_sapphire.png
 
 
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
