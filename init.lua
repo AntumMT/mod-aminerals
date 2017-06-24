@@ -37,7 +37,6 @@ end
 
 local scripts = {
 	'functions',
-	'overrides',
 	'items',
 	'nodes',
 	'crafting',

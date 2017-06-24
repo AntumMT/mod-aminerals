@@ -39,8 +39,12 @@ overrides:
 ]]
 
 
+-- FIXME: Use setting value like 'minerals.override_minerals'
+local override = true
+local exists_default = minerals.mod_exists('default')
+
+
 local ores = {
-	{'clay', },
 	{'coal', {cracky=3}},
 	{'copper', {cracky=2}},
 	{'gold', {cracky=2}},
@@ -56,6 +60,15 @@ for index, mineral in ipairs(ores) do
 		minerals.register_mineral(ore, {
 			groups = groups,
 		})
+		
+		if override then
+			local fullname = minerals.modname .. ':' .. ore
+			
+			if exists_default then
+				-- 'default' uses naming convention 'default:stone_with_<ore>'
+				minerals.override('default:stone_with_' .. ore, fullname)
+			end
+		end
 	end
 end
 
@@ -82,6 +95,15 @@ for index, mineral in ipairs(gems) do
 			groups = groups,
 			suffix = '_gem',
 		})
+		
+		if override then
+			local fullname = minerals.modname .. ':' .. gem
+			
+			if exists_default then
+				-- 'default' uses naming convention 'default:stone_with_<gem>'
+				minerals.override('default:stone_with_' .. gem, fullname)
+			end
+		end
 	end
 end
 
@@ -100,3 +122,10 @@ minerals.register_mineral('clay', {
 	drop_count = 4,
 	sounds = default.node_sound_dirt_defaults(),
 })
+
+if override then
+	local fullname = minerals.modname .. ':clay'
+	
+	if exists_default then
+		minerals.override('default:stone_with_clay', fullname)
+	end
