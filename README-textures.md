@@ -1,24 +1,41 @@
 # Licensing for Textures
 
 
-#### [CC BY-SA][lic.default] (from [default][])
-- minerals_gem_diamond.png
-- minerals_gem_mese.png
-- minerals_ingot_bronze.png
-- minerals_ingot_copper.png
-- minerals_ingot_gold.png
-- minerals_ore_coal.png
-- minerals_ore_copper.png
-- minerals_ore_diamond.png
-- minerals_ore_gold.png
-- minerals_ore_iron.png
-- minerals_ore_mese.png
-- minerals_ore_tin.png
-- minerals_raw_coal.png
-- minerals_raw_copper.png
-- minerals_raw_gold.png
-- minerals_raw_iron.png
-- minerals_raw_tin.png
+#### From [default][]
+
+- BlockMen (CC BY-SA 3.0)
+  - minerals_gem_diamond.png
+  - minerals_ingot_gold.png
+  - minerals_ore_mese.png
+
+- Calinou (CC BY-SA 3.0)
+  - minerals_ore_copper.png
+
+- Gambit (CC BY-SA 3.0)
+  - minerals_ingot_bronze.png
+  - minerals_ingot_copper.png
+  - minerals_raw_copper.png
+  - minerals_raw_gold.png
+  - minerals_raw_iron.png
+
+- InfinityProject (CC BY-SA 3.0)
+  - minerals_ore_diamond.png
+
+- kilbith (CC BY-SA 3.0)
+  - minerals_ore_tin.png
+  - minerals_raw_tin.png
+
+- PilzAdam (CC BY-SA 3.0)
+  - minerals_ore_gold.png
+
+- VanessaE (CC BY-SA 3.0)
+  - minerals_gem_mese.png
+
+- ???
+  - minerals_ore_coal.png
+  - minerals_ore_iron.png
+  - minerals_raw_coal.png
+
 
 #### [CC BY-SA][lic.rainbow_ore] (from [rainbow_ore][])
 - minerals_block_rainbow.png
