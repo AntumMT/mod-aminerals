@@ -43,33 +43,37 @@
   - minerals_ore_silver.png
 
 
+#### **[ores][]** ([README][lic.ores])
+- Enke (WTFPL)
+  - minerals_ore_alabaster.png
+  - minerals_ore_aluminum.png
+  - minerals_ore_andesite.png
+  - minerals_ore_anhydrite.png
+  - minerals_ore_basalt.png
+  - minerals_ore_bauxite.png
+  - minerals_ore_cobaltite.png
+  - minerals_ore_conglomerate.png
+  - minerals_ore_cryolite.png
+  - minerals_ore_dacite.png
+- John1 (WTFPL)
+  - minerals_ore_adamantine.png
+  - minerals_ore_bismuth.png
+  - minerals_ore_bituminous.png
+  - minerals_ore_borax.png
+  - minerals_ore_calcite.png
+  - minerals_ore_cass.png
+  - minerals_ore_chert.png
+  - minerals_ore_chromite.png
+  - minerals_ore_cin.png
+- ???
+  - minerals_ore_diorite.png
+
+
 #### **[rainbow_ore][]**
 - KingSmarty / FsxShader2012 ([CC BY-SA][lic.rainbow_ore])
   - minerals_block_rainbow.png
   - minerals_ingot_rainbow.png
   - minerals_ore_rainbow.png
-
-#### [WTFPL][lic.ores] (from [ores][])
-- minerals_ore_adamantine.png
-- minerals_ore_alabaster.png
-- minerals_ore_aluminum.png
-- minerals_ore_andesite.png
-- minerals_ore_anhydrite.png
-- minerals_ore_basalt.png
-- minerals_ore_bauxite.png
-- minerals_ore_bismuth.png
-- minerals_ore_bituminous.png
-- minerals_ore_borax.png
-- minerals_ore_calcite.png
-- minerals_ore_cass.png
-- minerals_ore_chert.png
-- minerals_ore_chromite.png
-- minerals_ore_cin.png
-- minerals_ore_cobaltite.png
-- minerals_ore_conglomerate.png
-- minerals_ore_cryolite.png
-- minerals_ore_dacite.png
-- minerals_ore_diorite.png
 
 #### WTFPL (from [uranium][])
 - minerals_gem_uranium.png
