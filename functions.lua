@@ -50,11 +50,18 @@ function minerals.register_lump(name, def)
 	
 	-- Default inventory image
 	if def.inventory_image == nil then
-		def.inventory_image = minerals.modname .. '_' .. name .. suffix .. '.png'
+		def.inventory_image = minerals.modname .. '_' .. name .. def.suffix .. '.png'
 	end
 	
 	minerals.register(name, def)
-	minetest.register_alias(name .. suffix, fullname)
+	
+	if def.suffix then
+		name = name .. def.suffix
+	end
+	
+	local fullname = minerals.modname .. ':' .. name
+	
+	minetest.register_alias(name .. def.suffix, fullname)
 	minetest.register_alias('lump_of_' .. name, fullname)
 	
 	minerals.log('Registered mineral lump "' .. fullname .. '"')
@@ -75,11 +82,18 @@ function minerals.register_gem(name, def)
 	
 	-- Default inventory image
 	if def.inventory_image == nil then
-		def.inventory_image = minerals.modname .. '_' .. name .. suffix .. '.png'
+		def.inventory_image = minerals.modname .. '_' .. name .. def.suffix .. '.png'
 	end
 	
 	minerals.register(name, def)
-	minetest.register_alias(name .. suffix, fullname)
+	
+	if def.suffix then
+		name = name .. def.suffix
+	end
+	
+	local fullname = minerals.modname .. ':' .. name
+	
+	minetest.register_alias(name .. def.suffix, fullname)
 	
 	minerals.log('Registered gem "' .. fullname .. '"')
 end
@@ -99,11 +113,18 @@ function minerals.register_ingot(name, def)
 	
 	-- Default inventory image
 	if def.inventory_image == nil then
-		def.inventory_image = minerals.modname .. '_' .. name .. suffix .. '.png'
+		def.inventory_image = minerals.modname .. '_' .. name .. def.suffix .. '.png'
 	end
 	
 	minerals.register(name, def)
-	minetest.register_alias(name .. suffix, fullname)
+	
+	if def.suffix then
+		name = name .. def.suffix
+	end
+	
+	local fullname = minerals.modname .. ':' .. name
+	
+	minetest.register_alias(name .. def.suffix, fullname)
 	
 	minerals.log('Registered ingot "' .. fullname .. '"')
 end
@@ -162,10 +183,10 @@ end
 
 -- Overrides a node/item & creates aliases of an existing node/item
 function minerals.override(old, new)
-  minetest.unregister_item(old)
-  minetest.register_alias(old, new)
+  minerals.log('Overriding "' .. old .. '" with "' .. new .. '" ...')
   
-  minerals.log('"' .. old .. '" overridden by "' .. new .. '"')
+  local unregistered = minetest.unregister_item(old)
+  local aliased = minetest.register_alias(old, new)
 end
 
 

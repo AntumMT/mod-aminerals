@@ -83,6 +83,11 @@ for index, ingot in ipairs(ingots) do
 			local fullname = minerals.modname .. ':' .. ingot .. '_ingot'
 			
 			if exists_default then
+				-- 'default:iron_ingot' is not a registered item
+				if ingot == 'iron' then
+					ingot = 'steel'
+				end
+				
 				-- 'default' uses naming convention 'default:<ingot>_ingot'
 				minerals.override('default:' .. ingot .. '_ingot', fullname)
 			end

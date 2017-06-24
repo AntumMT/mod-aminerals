@@ -53,8 +53,8 @@ local ores = {
 }
 
 for index, mineral in ipairs(ores) do
-	local ore = minerals[1]
-	local groups = minerals[2]
+	local ore = mineral[1]
+	local groups = mineral[2]
 	
 	if minerals.enabled(ore) then
 		minerals.register_mineral(ore, {
@@ -87,8 +87,8 @@ local gems = {
 }
 
 for index, mineral in ipairs(gems) do
-	local gem = minerals[1]
-	local groups = minerals[2]
+	local gem = mineral[1]
+	local groups = mineral[2]
 	
 	if minerals.enabled(gem) then
 		minerals.register_mineral(gem, {
@@ -127,5 +127,6 @@ if override then
 	local fullname = minerals.modname .. ':clay'
 	
 	if exists_default then
-		minerals.override('default:stone_with_clay', fullname)
+		minerals.override('default:clay', fullname)
 	end
+end

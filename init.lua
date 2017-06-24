@@ -14,17 +14,21 @@ minerals.modpath = minetest.get_modpath(minerals.modname)
 
 -- List of minerals to disable
 minerals.disabled_minerals = {}
--- Split comma-separated (& semi-color-sparated) list into table
--- FIXME: Remove whitespace
-for index, mineral in ipairs(string.split(minetest.settings:get('minerals.disabled_minerals'), ',')) do
-	if string.find(mineral, ';') then
-		-- Semi-colons
-		for index, mineral in ipairs(string.split(mineral, ';')) do
+local disabled_list = minetest.settings:get('minerals.disabled_minerals')
+
+if disabled_list ~= nil then
+	-- Split comma-separated (& semi-color-sparated) list into table
+	-- FIXME: Remove whitespace
+	for index, mineral in ipairs(string.split(disabled_list, ',')) do
+		if string.find(mineral, ';') then
+			-- Semi-colons
+			for index, mineral in ipairs(string.split(mineral, ';')) do
+				table.insert(minerals.disabled_minerals, mineral)
+			end
+		else
+			-- No semi-colon
 			table.insert(minerals.disabled_minerals, mineral)
 		end
-	else
-		-- No semi-colon
-		table.insert(minerals.disabled_minerals, mineral)
 	end
 end
 
