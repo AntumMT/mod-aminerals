@@ -222,3 +222,19 @@ end
 function minerals.enabled(mineral)
 	return not minerals.list_contains(minerals.disabled_minerals, mineral)
 end
+
+
+-- Retrieves filename string for texture
+function minerals.get_texture(name, suffix, variant)
+	local texture = minerals.modname
+	
+	for index, S in ipairs({name, suffix, variant}) do
+		if S then
+			texture = texture .. '_' .. S
+		end
+	end
+	
+	texture = texture .. '.png'
+	
+	return texture
+end

@@ -67,3 +67,7 @@
 ### ***minerals.enabled(mineral)***
 - Checks if a mineral is enabled
 - Return type: bool
+
+### ***minerals.get_texture(name, suffix, variant)***
+- Retrieves filename string for texture
+- Return type: string
