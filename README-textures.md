@@ -4,6 +4,7 @@
 #### **[default][]**
 
 - BlockMen (CC BY-SA 3.0)
+  - minerals_clay_brick.png
   - minerals_diamond_gem.png
   - minerals_gold_ingot.png
   - minerals_mese_ore.png
@@ -11,30 +12,78 @@
 - Calinou (CC BY-SA 3.0)
   - minerals_copper_ore.png
 
+- Cisoun's texture pack (CC BY-SA 3.0)
+  - minerals_stone.png
+
 - Gambit (CC BY-SA 3.0)
   - minerals_bronze_ingot.png
+  - minerals_clay_lump.png
   - minerals_copper_ingot.png
   - minerals_copper_raw.png
+  - minerals_diamond_block.png
   - minerals_gold_raw.png
   - minerals_iron_raw.png
 
 - InfinityProject (CC BY-SA 3.0)
   - minerals_diamond_ore.png
 
+- jojoa1997 (CC BY-SA 3.0)
+  - minerals_obsidian.png
+
+- kaeza (CC-BY-SA 3.0)
+  - minerals_desert_sandstone.png
+  - minerals_desert_sandstone_block.png
+  - minerals_desert_sandstone_brick.png
+
 - kilbith (CC BY-SA 3.0)
+  - minerals_bronze_block.png
+  - minerals_copper_block.png
+  - minerals_gold_block.png
+  - minerals_steel_block.png
+  - minerals_tin_block.png
+  - minerals_tin_ingot.png
   - minerals_tin_ore.png
   - minerals_tin_raw.png
+
+- Neuromancer (CC BY-SA 2.0)
+  - minerals_cobble.png
+  - minerals_mossycobble.png
+
+- paramat (CC BY-SA 3.0)
+  - minerals_desert_stone_block.png
+  - minerals_desert_stone_brick.png
+  - minerals_mese_block.png
+  - minerals_obsidian_block.png
+  - minerals_obsidian_brick.png
+  - minerals_silver_sand.png
+  - minerals_silver_sandstone.png -- Derived from a texture by GreenXenith (CC-BY-SA 3.0)
+  - minerals_silver_sandstone_block.png -- Derived from a texture by GreenXenith (CC-BY-SA 3.0)
+  - minerals_solver_sandstone_brick.png -- Derived from a texture by GreenXenith (CC-BY-SA 3.0)
+  - minerals_sandstone_block.png
+  - minerals_sandstone_brick.png
+  - minerals_stone_block.png
+  - minerals_stone_brick.png
 
 - PilzAdam (CC BY-SA 3.0)
   - minerals_gold_ore.png
 
+- sofar (WTFPL)
+  - minerals_gravel.png
+
 - VanessaE (CC BY-SA 3.0)
+  - minerals_desert_sand.png
+  - minerals_desert_stone.png
+  - minerals_mese_crystal_fragment.png
   - minerals_mese_gem.png
+  - minerals_sand.png
 
 - ???
+  - minerals_clay.png
   - minerals_coal_ore.png
   - minerals_coal_raw.png
   - minerals_iron_ore.png
+  - minerals_sandstone.png
+  - minerals_steel_ingot.png
 
 
 #### **[gems][gems_encrustable] (Encrustable Gems)**
