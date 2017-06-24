@@ -37,6 +37,18 @@
   - minerals_raw_coal.png
 
 
+#### [gems_encrustable][] (Encrustable Gems)
+- wowiamdiamonds (WTFPL)
+  - minerals_gem_aquamarine.png
+  - minerals_gem_garnet.png
+  - minerals_gem_opal.png
+  - minerals_gem_topaz.png
+  - minerals_ore_aquamarine.png
+  - minerals_ore_garnet.png
+  - minerals_ore_opal.png
+  - minerals_ore_topaz.png
+
+
 #### **[moreores]**
 - Calinou ([CC BY-SA 3.0][lic.moreores])
   - minerals_ore_mithril.png
@@ -80,16 +92,6 @@
 - LandMine (WTFPL)
   - minerals_gem_uranium.png
   - minerals_ore_uranium.png
-
-#### WTFPL (from [gems_encrustable][] by wowiamdiamonds)
-- minerals_gem_aquamarine.png
-- minerals_gem_garnet.png
-- minerals_gem_opal.png
-- minerals_gem_topaz.png
-- minerals_ore_aquamarine.png
-- minerals_ore_garnet.png
-- minerals_ore_opal.png
-- minerals_ore_topaz.png
 
 #### [GPL 3.0][lic.gems_tools] (from [gems_tools][] by LionLAD/captainLAD)
 - minerals_block_amethyst.png
