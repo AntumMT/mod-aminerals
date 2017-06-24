@@ -8,16 +8,28 @@
 --]]
 
 
--- *** ORE LUMPS ***
+--[[ COAL
 
-minetest.register_craftitem('minerals:coal_lump', {
-	description = 'Coal Lump',
-	inventory_image = 'minerals_lump_coal.png',
-	groups = {
-		coal=1,
-		flammable=1,
-	},
-})
+overrides:
+- default:coal_lump
+
+]]
+
+if minerals.enabled('coal') then
+	minerals.register_lump('coal', {
+		groups = {
+			coal=1,
+			flammable=1,
+		},
+	})
+end
+
+
+--[[ BASIC MINERALS
+
+overrides:
+
+]]
 
 local lumps = {
 	'copper',
@@ -27,13 +39,9 @@ local lumps = {
 }
 
 for index, lump in ipairs(lumps) do
-	local lump_name = 'minerals:lump_' .. lump
-	minetest.register_craftitem(lump_name, {
-		description = minerals.titleize(lump) .. ' Lump',
-		inventory_image = 'minerals_lump_' .. lump .. '.png',
-	})
-	minetest.register_alias('minerals:' .. lump .. '_lump', lump_name)
-	minetest.register_alias(lump .. '_lump', lump_name)
+	if minerals.enabled(lump) then
+		minerals.register_lump(lump, {})
+	end
 end
 
 
