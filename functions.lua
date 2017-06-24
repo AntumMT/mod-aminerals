@@ -136,6 +136,23 @@ function minerals.register_mineral(name, def)
 end
 
 
+-- Overrides a node/item & creates aliases of an existing node/item
+function minerals.override(old, new)
+  minetest.unregister_item(old)
+  minetest.register_alias(old, new)
+end
+
+
+-- Checks for existing global or mod path
+function minerals.mod_exists(modname)
+	if minetest.global_exists(modname) or minetest.get_modpath(modname) then
+		return true
+	end
+	
+	return false
+end
+
+
 -- Titleizes a string
 -- FIXME: Only titleizes first word
 function minerals.titleize(str)
