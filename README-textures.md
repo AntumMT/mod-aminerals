@@ -316,6 +316,9 @@
 
 - LandMine (WTFPL)
   - minerals_uranium.png
+  - minerals_uranium_block.png
+  - minerals_uranium_coal.png
+  - minerals_uranium_dust.png
   - minerals_uranium_lump.png
 
 
