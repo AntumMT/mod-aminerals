@@ -35,6 +35,10 @@
 - Registers a new mineral lump & logs message
 - Return type: nil
 
+### ***minerals.register_gem(name, def)***
+- Registers a new gem & logs message
+- Return value: nil
+
 ### ***minerals.register_mineral(name, def)***
 - Registers a new mineral & logs message
 - Return type: nil
