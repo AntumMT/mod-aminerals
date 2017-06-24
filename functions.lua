@@ -37,3 +37,8 @@ function minerals.list_contains(list, value)
 	
 	return false
 end
+
+-- Checks if a mineral is enabled
+function minerals.enabled(mineral)
+	return not minerals.list_contains(minerals.disabled_minerals, mineral)
+end
