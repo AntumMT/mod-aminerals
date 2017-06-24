@@ -147,8 +147,8 @@
   - minerals_adamantite_ingot.png
   - minerals_adamantite_ore.png
   - minerals_adamantite_raw.png
-  - minerals_antracite_ore.png
-  - minerals_antracite_raw.png
+  - minerals_anthracite_ore.png
+  - minerals_anthracite_raw.png
   - minerals_cobalt_block_brick.png
   - minerals_cobalt_ingot.png
   - minerals_cobalt_ore.png
