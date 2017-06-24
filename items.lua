@@ -56,13 +56,9 @@ local ingots = {
 }
 
 for index, ingot in ipairs(ingots) do
-	local ingot_name = 'minerals:ingot_' .. ingot
-	minetest.register_craftitem(ingot_name, {
-		description = minerals.titleize(ingot) .. ' Ingot',
-		inventory_image = 'minerals_ingot_' .. ingot .. '.png',
-	})
-	minetest.register_alias('minerals:' .. ingot .. '_ingot', ingot_name)
-	minetest.register_alias(ingot .. '_ingot', ingot_name)
+	if minerals.enabled(ingot) then
+		minerals.register_ingot(ingot, {})
+	end
 end
 
 
