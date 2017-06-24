@@ -27,6 +27,14 @@
 - Logs message output with header
 - Return type: nil
 
+### ***minerals.register(name, def)***
+- Registers a new item
+- Return type: nil
+
+### ***minerals.register_lump(name, def)***
+- Registers a new mineral lump & logs message
+- Return type: nil
+
 ### ***minerals.register_mineral(name, def)***
 - Registers a new mineral & logs message
 - Return type: nil
@@ -38,4 +46,8 @@
 
 ### ***minerals.list_contains(list, value)***
 - Checks table contents for a specified a value
+- Return type: bool
+
+### ***minerals.enabled(mineral)***
+- Checks if a mineral is enabled
 - Return type: bool

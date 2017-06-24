@@ -15,20 +15,51 @@ function minerals.log(message)
 	end
 end
 
--- Registers a new mineral lump & logs message
-function minerals.register_lump(name, groups)
-	local suffix = name .. '_lump'
-	local fullname = minerals.modname .. ':' .. suffix
+
+-- Registers a new item
+function minerals.register(name, def)
+	if def.suffix ~= nil then
+		name = name .. def.suffix
+	end
+	
+	local fullname = minerals.modname .. ':' .. name
+	
 	minetest.register_craftitem(fullname, {
-		description = minerals.titleize(name) .. ' Lump',
-		inventory_image = minerals.modname .. suffix .. '.png',
-		groups = groups,
+		description = def.description,
+		inventory_image = def.inventory_image,
+		wield_image = def.wield_image,
+		wield_scale = def.wield_scale,
+		groups = def.groups,
+		stack_max = def.stack_max,
+		liquids_pointable = def.liquids_pointable,
 	})
-	minetest.register_alias(suffix, fullname)
+end
+
+
+-- Registers a new mineral lump & logs message
+function minerals.register_lump(name, def)
+	-- Default suffix
+	if def.suffix == nil then
+		def.suffix = '_lump'
+	end
+	
+	-- Default description
+	if def.description == nil then
+		def.description = minerals.titleize(name) .. ' Lump'
+	end
+	
+	-- Default inventory image
+	if def.inventory_image == nil then
+		def.inventory_image = minerals.modname .. '_' .. name .. suffix .. '.png'
+	end
+	
+	minerals.register(name, def)
+	minetest.register_alias(name .. suffix, fullname)
 	minetest.register_alias('lump_of_' .. name, fullname)
 	
 	minerals.log('Registered mineral lump "' .. fullname .. '"')
 end
+
 
 -- Registers a new mineral & logs message
 function minerals.register_mineral(name, def)
@@ -80,6 +111,7 @@ function minerals.register_mineral(name, def)
 	minerals.log('Registered mineral "' .. name .. '"')
 end
 
+
 -- Titleizes a string
 -- FIXME: Only titleizes first word
 function minerals.titleize(str)
@@ -96,6 +128,7 @@ function minerals.list_contains(list, value)
 	
 	return false
 end
+
 
 -- Checks if a mineral is enabled
 function minerals.enabled(mineral)
