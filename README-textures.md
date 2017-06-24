@@ -98,10 +98,10 @@
   - minerals_bituminous_ore.png
   - minerals_borax_ore.png
   - minerals_calcite_ore.png
-  - minerals_cass_ore.png
+  - minerals_cassiterite_ore.png
   - minerals_chert_ore.png
   - minerals_chromite_ore.png
-  - minerals_cin_ore.png
+  - minerals_cinnabar_ore.png
 
 - ???
   - minerals_diorite_ore.png
