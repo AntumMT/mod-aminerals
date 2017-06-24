@@ -71,19 +71,59 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 
 
 ## **Mods list**
-* *default* ([minetest_game][])
-* *[gems][gems_encrustable]* (Encrustable Gems) by wowiamdiamonds ([GitHub][gh.gems_encrustable])
-* *[gems][gems_tools]* (Gem Tools) by LionLAD/captainLAD ([GitHub][gh.gems_tools])
-* *[lottores][lott]* by fishyWET ([GitHub][gh.lott])
-* *[moreores][]* by Calinou ([GitHub][gh.moreores])
-* *[ores][]* by Enke ([GitHub][gh.ores])
-* *[oresplus][oresplus]* by everamzah ([GitHub][gh.oresplus])
-  * **Note:** Forum post & GitHub repository created by separate users so may diverge
-* *[quartz][]* by Evergreen ([GitHub][gh.quartz])
-* *[rainbow_ore][]* by KingSmarty/FsxShader2012 ([GitHub][gh.rainbow_ore])
-* *[technic_worldgen][technic]* by RealBadAngel ([GitHub][gh.technic])
-* *[uranium][]* by LandMine ([GitHub][gh.uranium])
-* *[xtraores][]* by davidthecreator ([GitHub][gh.xtraores])
+
+- *default* ([minetest_game][])
+- *[gems][gems_encrustable]*  (Encrustable Gems) by wowiamdiamonds ([GitHub][gh.gems_encrustable])
+- *[gems][gems_tools]*  (Gem Tools) by LionLAD/captainLAD ([GitHub][gh.gems_tools])
+- *[lottores][lott]*  by fishyWET ([GitHub][gh.lott])
+- *[moreores][]*  by Calinou ([GitHub][gh.moreores])
+- *[ores][]*  by Enke ([GitHub][gh.ores])
+- *[oresplus][oresplus]*  by everamzah ([GitHub][gh.oresplus])
+  - **Note:** Forum post & GitHub repository created by separate users so may diverge
+- *[quartz][]*  by Evergreen ([GitHub][gh.quartz])
+- *[rainbow_ore][]*  by KingSmarty/FsxShader2012 ([GitHub][gh.rainbow_ore])
+- *[technic_worldgen][technic]*  by RealBadAngel ([GitHub][gh.technic])
+- *[uranium][]*  by LandMine ([GitHub][gh.uranium])
+- *[xtraores][]*  by davidthecreator ([GitHub][gh.xtraores])
+
+
+## **Minerals/Metals to possibly add
+
+- acanthite
+- agate
+- alexandrite
+- amber
+- baryte
+- beryl (red, green, & golden)
+- biotite
+- bornite
+- brass
+- chalcocite
+- chalcopyrite
+- celestine
+- cerite
+- cerussite
+- diaboleite
+- ephesite
+- esperite
+- fluorite
+- hassium
+- iridium
+- kesterite
+- nickel
+- onyx
+- osmium
+- padparadscha
+- pearl
+- perite
+- pyrite
+- ruthenium
+- spinel
+- turquoise
+- zircon
+
+[List of minerals on Wikipedia](https://en.wikipedia.org/wiki/List_of_minerals)
+[List of gemstones on Wikipedia](https://en.wikipedia.org/wiki/List_of_minerals)
 
 
 [Minetest]: http://www.minetest.net/
