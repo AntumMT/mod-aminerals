@@ -120,7 +120,42 @@
   - minerals_sapphire_lump.png
 
 
-#### **[moreores]**
+#### **[geominer][]**
+- Devy / CoderForTheBetter ([MIT][lic.geominer])
+  - minerals_agate.png
+  - minerals_agate_shard.png
+  - minerals_beryl.png
+  - minerals_beryl_shard.png
+  - minerals_diorite_geominer.png
+  - minerals_dungeon_stone.png
+  - minerals_emerald_geominer.png
+  - minerals_emerald_shard.png
+  - minerals_gneiss.png
+  - minerals_gneiss_top.png
+  - minerals_granite_geominer.png
+  - minerals_hematite.png
+  - minerals_hematite_shard.png
+  - minerals_hornfels.png
+  - minerals_hornfels_top.png
+  - minerals_larimar.png
+  - minerals_larimar_shard.png
+  - minerals_limestone_geominer.png
+  - minerals_marble_geominer.png
+  - minerals_moonstone.png
+  - minerals_moonstone_shard.png
+  - minerals_peridotite.png
+  - minerals_peridotite_top.png
+  - minerals_ruby_geominer.png
+  - minerals_ruby_shard.png
+  - minerals_sapphire_geominer.png
+  - minerals_sapphire_shard.png
+  - minerals_scoria.png
+  - minerals_slate.png
+  - minerals_sunstone.png
+  - minerals_sunstone_shard.png
+
+
+#### **[moreores][]**
 
 - Calinou ([CC BY-SA 3.0][lic.moreores])
   - minerals_mithril.png
@@ -290,6 +325,7 @@
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
 [gems_encrustable]: https://forum.minetest.net/viewtopic.php?t=2596
 [gems_tools]: https://forum.minetest.net/viewtopic.php?t=4294
+[geominer]: https://forum.minetest.net/viewtopic.php?t=17771
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98
 [oresplus]: https://forum.minetest.net/viewtopic.php?t=13120
@@ -300,6 +336,7 @@
 
 [lic.default]: https://github.com/minetest/minetest_game/blob/master/mods/default/license.txt
 [lic.gems_tools]: https://github.com/captainLAD/gems/blob/master/LICENSE
+[lic.geominer]: https://github.com/CoderForTheBetter/geominer/blob/master/LICENSE.txt
 [lic.moreores]: https://github.com/minetest-mods/moreores/blob/master/README.md
 [lic.ores]: https://github.com/Nullsrc/Ores/blob/master/README.txt
 [lic.oresplus]: https://github.com/taikedz/everamzah-oresplus/blob/master/LICENSE
