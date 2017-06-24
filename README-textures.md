@@ -91,6 +91,12 @@
   - minerals_ore_emerald_oresplus.png
   - minerals_ore_glowstone.png
 
+#### From [quartz][]
+- By Evergreen/EvergreenTree ([MIT][lic.quartz])
+  - minerals_block_quartz.png
+  - minerals_gem_quartz.png
+  - minerals_ore_quartz.png
+
 
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
 [gems_encrustable]: https://forum.minetest.net/viewtopic.php?t=2596
@@ -98,6 +104,7 @@
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98
 [oresplus]: https://forum.minetest.net/viewtopic.php?t=13120
+[quartz]: https://forum.minetest.net/viewtopic.php?t=5682
 [rainbow_ore]: https://forum.minetest.net/viewtopic.php?t=13519
 [uranium]: https://forum.minetest.net/viewtopic.php?t=2234
 
@@ -106,4 +113,5 @@
 [lic.moreores]: https://github.com/minetest-mods/moreores/blob/master/README.md
 [lic.ores]: https://github.com/Nullsrc/Ores/blob/master/README.txt
 [lic.oresplus]: https://github.com/taikedz/everamzah-oresplus/blob/master/LICENSE
+[lic.quartz]: https://github.com/minetest-mods/quartz/blob/master/README.txt
 [lic.rainbow_ore]: https://github.com/FsxShader2012/rainbow_ore/blob/master/README.md
