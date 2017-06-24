@@ -51,11 +51,16 @@
 - minerals_raw_dacite.png
 - minerals_raw_diorite.png
 
+#### WTFPL (from [uranium][])
+- minerals_gem_uranium.png
+- minerals_raw_uranium.png
+
 
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98
 [rainbow_ore]: https://forum.minetest.net/viewtopic.php?t=13519
+[uranium]: https://forum.minetest.net/viewtopic.php?t=2234
 
 [lic.default]: https://github.com/minetest/minetest_game/blob/master/mods/default/license.txt
 [lic.moreores]: https://github.com/minetest-mods/moreores/blob/master/README.md
