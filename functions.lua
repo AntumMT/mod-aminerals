@@ -85,6 +85,30 @@ function minerals.register_gem(name, def)
 end
 
 
+-- Registers a new ingot & logs message
+function minerals.register_ingot(name, def)
+	-- Default suffix
+	if def.suffix == nil then
+		def.suffix = '_ingot'
+	end
+	
+	-- Default description
+	if def.description == nil then
+		def.description = minerals.titleize(name) .. ' Ingot'
+	end
+	
+	-- Default inventory image
+	if def.inventory_image == nil then
+		def.inventory_image = minerals.modname .. '_' .. name .. suffix .. '.png'
+	end
+	
+	minerals.register(name, def)
+	minetest.register_alias(name .. suffix, fullname)
+	
+	minerals.log('Registered ingot "' .. fullname .. '"')
+end
+
+
 -- Registers a new mineral & logs message
 function minerals.register_mineral(name, def)
 	local fullname = minerals.modname .. ':' .. name

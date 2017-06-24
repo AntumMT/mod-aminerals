@@ -39,6 +39,10 @@
 - Registers a new gem & logs message
 - Return value: nil
 
+### ***minerals.register_ingot(name, def)***
+- Registers a new ingot & logs message
+- Return value: nil
+
 ### ***minerals.register_mineral(name, def)***
 - Registers a new mineral & logs message
 - Return type: nil
