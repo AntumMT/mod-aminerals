@@ -53,7 +53,13 @@
 
 ### ***minerals.override_type(name, modname, suffix)***
 - Overrides a node/item using a common suffix
-- Return type: nil
+- **arg**: name
+  - Base name that is common for old & new objects
+- **arg**: modname
+  - Name of the mod from which the item is being overridden
+- **arg**: suffix
+  - Common string to append to both old & new objects name
+- **return**: nil
 
 ### ***minerals.mod_exists(modname)***
 - Checks for existing global or mod path
