@@ -81,6 +81,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
   * **Note:** Forum post & GitHub repository created by separate users so may diverge
 * *[quartz][]* by Evergreen ([GitHub][gh.quartz])
 * *[rainbow_ore][]* by KingSmarty/FsxShader2012 ([GitHub][gh.rainbow_ore])
+* *[technic_worldgen][technic]* by RealBadAngel ([GitHub][gh.technic])
 * *[uranium][]* by LandMine ([GitHub][gh.uranium])
 * *[xtraores][]* by davidthecreator ([GitHub][gh.xtraores])
 
@@ -96,6 +97,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 [oresplus]: https://forum.minetest.net/viewtopic.php?t=13120
 [quartz]: https://forum.minetest.net/viewtopic.php?t=5682
 [rainbow_ore]: https://forum.minetest.net/viewtopic.php?t=13519
+[technic]: https://forum.minetest.net/viewtopic.php?t=2538
 [uranium]: https://forum.minetest.net/viewtopic.php?t=2234
 [xtraores]: https://forum.minetest.net/viewtopic.php?t=12798
 
@@ -107,5 +109,6 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 [gh.oresplus]: https://github.com/taikedz/everamzah-oresplus
 [gh.quartz]: https://github.com/minetest-mods/quartz
 [gh.rainbow_ore]: https://github.com/FsxShader2012/rainbow_ore
+[gh.technic]: https://github.com/minetest-mods/technic
 [gh.uranium]: https://github.com/AntumMT/mtmod-uranium
 [gh.xtraores]: https://github.com/AntumMT/mtmp-xtraores
