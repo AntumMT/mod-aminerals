@@ -38,6 +38,7 @@
 
 
 #### [gems_encrustable][] (Encrustable Gems)
+
 - wowiamdiamonds (WTFPL)
   - minerals_gem_aquamarine.png
   - minerals_gem_garnet.png
@@ -49,13 +50,36 @@
   - minerals_ore_topaz.png
 
 
+#### [gems_tools][] (Gem Tools)
+
+- LionLAD / captainLAD ([GPL 3.0][lic.gems_tools])
+  - minerals_block_amethyst.png
+  - minerals_block_emerald.png
+  - minerals_block_ruby.png
+  - minerals_block_sapphire.png
+  - minerals_gem_amethyst.png
+  - minerals_gem_emerald.png
+  - minerals_gem_ruby.png
+  - minerals_gem_sapphire.png
+  - minerals_ore_amethyst.png
+  - minerals_ore_emerald.png
+  - minerals_ore_ruby.png
+  - minerals_ore_sapphire.png
+  - minerals_raw_amethyst.png
+  - minerals_raw_emerald.png
+  - minerals_raw_ruby.png
+  - minerals_raw_sapphire.png
+
+
 #### **[moreores]**
+
 - Calinou ([CC BY-SA 3.0][lic.moreores])
   - minerals_ore_mithril.png
   - minerals_ore_silver.png
 
 
 #### **[ores][]** ([README][lic.ores])
+
 - Enke (WTFPL)
   - minerals_ore_alabaster.png
   - minerals_ore_aluminum.png
@@ -67,6 +91,7 @@
   - minerals_ore_conglomerate.png
   - minerals_ore_cryolite.png
   - minerals_ore_dacite.png
+
 - John1 (WTFPL)
   - minerals_ore_adamantine.png
   - minerals_ore_bismuth.png
@@ -77,11 +102,13 @@
   - minerals_ore_chert.png
   - minerals_ore_chromite.png
   - minerals_ore_cin.png
+
 - ???
   - minerals_ore_diorite.png
 
 
 #### **[rainbow_ore][]**
+
 - KingSmarty / FsxShader2012 ([CC BY-SA][lic.rainbow_ore])
   - minerals_block_rainbow.png
   - minerals_ingot_rainbow.png
@@ -89,27 +116,10 @@
 
 
 #### [uranium][]
+
 - LandMine (WTFPL)
   - minerals_gem_uranium.png
   - minerals_ore_uranium.png
-
-#### [GPL 3.0][lic.gems_tools] (from [gems_tools][] by LionLAD/captainLAD)
-- minerals_block_amethyst.png
-- minerals_block_emerald.png
-- minerals_block_ruby.png
-- minerals_block_sapphire.png
-- minerals_gem_amethyst.png
-- minerals_gem_emerald.png
-- minerals_gem_ruby.png
-- minerals_gem_sapphire.png
-- minerals_ore_amethyst.png
-- minerals_ore_emerald.png
-- minerals_ore_ruby.png
-- minerals_ore_sapphire.png
-- minerals_raw_amethyst.png
-- minerals_raw_emerald.png
-- minerals_raw_ruby.png
-- minerals_raw_sapphire.png
 
 #### Textures from [oresplus][] by everamzah
 - By Gambit ([GPL 3.0 / WTFPL???][lic.oresplus])
