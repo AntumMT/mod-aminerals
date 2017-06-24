@@ -15,6 +15,21 @@ function minerals.log(message)
 	end
 end
 
+-- Registers a new mineral lump & logs message
+function minerals.register_lump(name, groups)
+	local suffix = name .. '_lump'
+	local canonical = minerals.modname .. ':' .. suffix
+	minetest.register_craftitem(canonical, {
+		description = minerals.titleize(name) .. ' Lump',
+		inventory_image = minerals.modname .. suffix .. '.png',
+		groups = groups,
+	})
+	minetest.register_alias(suffix, canonical)
+	minetest.register_alias('lump_of_' .. name, canonical)
+	
+	minerals.log('Registered mineral lump "' .. canonical .. '"')
+end
+
 -- Registers a new mineral & logs message
 function minerals.register_mineral(name, def)
 	minetest.register_node(name, def)
