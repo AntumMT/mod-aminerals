@@ -29,6 +29,12 @@ for index, mineral in ipairs(string.split(minetest.settings:get('minerals.disabl
 end
 
 
+-- For compatibility with other mods
+if not minetest.global_exists('default') then
+	default = {}
+end
+
+
 local scripts = {
 	'functions',
 	'overrides',
