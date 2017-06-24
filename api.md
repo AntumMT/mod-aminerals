@@ -18,7 +18,9 @@
 - List of minerals to be disabled
 - Type: string table
 
-### 
+### ***minerals.override_others***
+- Setting indicating whether or not objects from 3rd party mods should be overridden
+- Type: bool
 
 
 ## -- Methods/Functions --
