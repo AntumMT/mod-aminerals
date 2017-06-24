@@ -188,6 +188,44 @@
   - minerals_rainbow_ore.png
 
 
+#### **[technic_worldgen][]**
+
+- ???
+  - minerals_brass_block.png
+  - minerals_brass_dust.png
+  - minerals_brass_ingot.png
+  - minerals_carbon_steel_block.png
+  - minerals_carbon_steel_ingot.png
+  - minerals_cast_iron_block.png
+  - minerals_cast_iron_ingot.png
+  - minerals_chromium.png
+  - minerals_chromium_block.png
+  - minerals_chromium_ingot.png
+  - minerals_chromium_lump.png
+  - minerals_granite.png
+  - minerals_lead.png
+  - minerals_lead_block.png
+  - minerals_lead_dust.png
+  - minerals_lead_ingot.png
+  - minerals_lead_lump.png
+  - minerals_marble_bricks.png
+  - minerals_marble_technic.png
+  - minerals_stainless_steel_block.png
+  - minerals_sulfur.png
+  - minerals_sulfur_dust.png
+  - minerals_sulfur_lump.png
+  - minerals_uranium_block.png
+  - minerals_uranium_ingot.png
+  - minerals_uranium_lump_technic.png
+  - minerals_uranium_technic.png
+  - minerals_wrought_iron_block.png
+  - minerals_wrought_iron_ingot.png
+  - minerals_zinc.png
+  - minerals_zinc_block.png
+  - minerals_zinc_ingot.png
+  - minerals_zinc_lump.png
+
+
 #### **[uranium][]**
 
 - LandMine (WTFPL)

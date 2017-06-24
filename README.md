@@ -23,11 +23,15 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_bismuth_ore.png) bismuth
 - ![](textures/minerals_bituminous_ore.png) bituminous
 - ![](textures/minerals_borax_ore.png) borax
+- ![](textures/minerals_brass_ingot.png) brass
 - ![](textures/minerals_bronze_ingot.png) bronze
 - ![](textures/minerals_calcite_ore.png) calcite
+- ![](textures/minerals_carbon_steel_ingot.png) carbon steel
 - ![](textures/minerals_cassiterite_ore.png) cassiterite
+- ![](textures/minerals_cast_iron_ingot.png) cast iron
 - ![](textures/minerals_chert_ore.png) chert
 - ![](textures/minerals_chromite_ore.png) chromite
+- ![](textures/minerals_chromium_ingot.png) chromium
 - ![](textures/minerals_cinnabar_ore.png) cinnabar
 - ![](textures/minerals_clay_lump.png) clay
 - ![](textures/minerals_coal_lump.png) coal
@@ -46,12 +50,15 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_geminitinum_ingot.png) geminitinum
 - ![](textures/minerals_glowstone_ore.png) glowstone
 - ![](textures/minerals_gold_ingot.png) gold
+- ![](textures/minerals_granite.png) granite
 - ![](textures/minerals_gravel.png) gravel
 - ![](textures/minerals_iron_lump.png) iron
+- ![](textures/minerals_lead_ingot.png) lead
 - ![](textures/minerals_marble_block_polished.png) marble
 - ![](textures/minerals_marble_black_ore.png) marble (black)
 - ![](textures/minerals_marble_blue_ore.png) marble (blue)
 - ![](textures/minerals_marble_red_ore.png) marble (red)
+- ![](textures/minerals_marble_bricks.png) marble (technic mod)
 - ![](textures/minerals_mese_gem.png) mese
 - ![](textures/minerals_mithril_ingot.png) mithril
 - ![](textures/minerals_mossycobble.png) mossy cobble
@@ -69,11 +76,15 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - ![](textures/minerals_silver_ingot.png) silver
 - ![](textures/minerals_steel_ingot.png) steel
 - ![](textures/minerals_stone_brick.png) stone
+- ![](textures/minerals_sulfur_lump.png) sulfur
 - ![](textures/minerals_tin_ingot.png) tin
 - ![](textures/minerals_titanium_ingot.png) titanium
 - ![](textures/minerals_topaz_gem.png) topaz
 - ![](textures/minerals_unobtanium_ingot.png) unobtanium
 - ![](textures/minerals_uranium_gem.png) uranium
+- ![](textures/minerals_uranium_ingot.png) uranium (technic)
+- ![](textures/minerals_wrought_iron_ingot.png) wrought iron
+- ![](textures/minerals_zinc_ingot.png) zinc
 
 
 ## **Mods list**
@@ -105,7 +116,6 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - beryl (red, green, & golden)
 - biotite
 - bornite
-- brass
 - chalcocite
 - chalcopyrite
 - celestine
