@@ -97,6 +97,57 @@
   - minerals_gem_quartz.png
   - minerals_ore_quartz.png
 
+#### From [xtraores][]
+- By davidthecreator - WTFPL
+  - minerals_block_brick_adamantite.png
+  - minerals_block_brick_cobalt.png
+  - minerals_block_brick_geminitinum.png
+  - minerals_block_brick_marble.png
+  - minerals_block_brick_marble_black.png
+  - minerals_block_brick_marble_blue.png
+  - minerals_block_brick_marble_red.png
+  - minerals_block_brick_osminum.png
+  - minerals_block_brick_platinum.png
+  - minerals_block_brick_rarium.png
+  - minerals_block_brick_rarium_Kopija.png
+  - minerals_block_brick_titanium.png
+  - minerals_block_brick_unobtanium.png
+  - minerals_block_polished_marble.png
+  - minerals_block_polished_marble_black.png
+  - minerals_block_polished_marble_blue.png
+  - minerals_block_polished_marble_red.png
+  - minerals_block_rainbow_xtraores.png
+  - minerals_ingot_adamantite.png
+  - minerals_ingot_cobalt.png
+  - minerals_ingot_geminitinum.png
+  - minerals_ingot_osminum.png
+  - minerals_ingot_platinum.png
+  - minerals_ingot_rarium.png
+  - minerals_ingot_titanium.png
+  - minerals_ingot_unobtanium.png
+  - minerals_ore_adamantite.png
+  - minerals_ore_antracite.png
+  - minerals_ore_cobalt.png
+  - minerals_ore_geminitinum.png
+  - minerals_ore_marble.png
+  - minerals_ore_marble_black.png
+  - minerals_ore_marble_blue.png
+  - minerals_ore_marble_red.png
+  - minerals_ore_osminum.png
+  - minerals_ore_platinum.png
+  - minerals_ore_rarium.png
+  - minerals_ore_titanium.png
+  - minerals_ore_unobtanium.png
+  - minerals_raw_adamantite.png
+  - minerals_raw_antracite.png
+  - minerals_raw_cobalt.png
+  - minerals_raw_geminitinum.png
+  - minerals_raw_osminum.png
+  - minerals_raw_platinum.png
+  - minerals_raw_rarium.png
+  - minerals_raw_titanium.png
+  - minerals_raw_unobtanium.png
+
 
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
 [gems_encrustable]: https://forum.minetest.net/viewtopic.php?t=2596
@@ -107,6 +158,7 @@
 [quartz]: https://forum.minetest.net/viewtopic.php?t=5682
 [rainbow_ore]: https://forum.minetest.net/viewtopic.php?t=13519
 [uranium]: https://forum.minetest.net/viewtopic.php?t=2234
+[xtraores]: https://forum.minetest.net/viewtopic.php?t=12798
 
 [lic.default]: https://github.com/minetest/minetest_game/blob/master/mods/default/license.txt
 [lic.gems_tools]: https://github.com/captainLAD/gems/blob/master/LICENSE
