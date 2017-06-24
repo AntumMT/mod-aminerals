@@ -84,6 +84,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 - *[geominer][]*  by Devy ([GitHub][gh.geominer])
 - *[lottores][lott]*  by fishyWET ([GitHub][gh.lott])
 - *[moreores][]*  by Calinou ([GitHub][gh.moreores])
+- *[nether][]*  by PilzAdam ([GitHub][gh.nether])
 - *[ores][]*  by Enke ([GitHub][gh.ores])
 - *[oresplus][oresplus]*  by everamzah ([GitHub][gh.oresplus])
   - **Note:** Forum post & GitHub repository created by separate users so may diverge
@@ -141,6 +142,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 [lott]: https://forum.minetest.net/viewtopic.php?t=5578
 [minetest_game]: https://github.com/minetest/minetest_game
 [moreores]: https://forum.minetest.net/viewtopic.php?t=549
+[nether]: https://forum.minetest.net/viewtopic.php?t=5790
 [ores]: http://forum.freeminer.org/threads/ores-mod-wip-0-8-ores.98/
 [oresplus]: https://forum.minetest.net/viewtopic.php?t=13120
 [quartz]: https://forum.minetest.net/viewtopic.php?t=5682
@@ -154,6 +156,7 @@ An attempt to unify ores/gems/minerals from multiple different Minetest mods.
 [gh.geominer]: https://github.com/CoderForTheBetter/geominer
 [gh.lott]: https://github.com/minetest-LOTR/Lord-of-the-Test
 [gh.moreores]: https://github.com/minetest-mods/moreores
+[gh.nether]: https://github.com/PilzAdam/nether
 [gh.ores]: https://github.com/Nullsrc/Ores
 [gh.oresplus]: https://github.com/taikedz/everamzah-oresplus
 [gh.quartz]: https://github.com/minetest-mods/quartz
