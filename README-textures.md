@@ -1,4 +1,4 @@
-# Licensing for Textures
+# Licensing & Attributions for Textures
 
 
 #### **[default][]**
@@ -37,7 +37,7 @@
   - minerals_raw_coal.png
 
 
-#### [gems_encrustable][] (Encrustable Gems)
+#### **[gems][gems_encrustable] (Encrustable Gems)**
 
 - wowiamdiamonds (WTFPL)
   - minerals_gem_aquamarine.png
@@ -50,7 +50,7 @@
   - minerals_ore_topaz.png
 
 
-#### [gems_tools][] (Gem Tools)
+#### **[gems][gems_tools] (Gem Tools)**
 
 - LionLAD / captainLAD ([GPL 3.0][lic.gems_tools])
   - minerals_block_amethyst.png
@@ -107,6 +107,24 @@
   - minerals_ore_diorite.png
 
 
+#### **[oresplus][]**
+
+- By Gambit ([GPL 3.0 / WTFPL???][lic.oresplus])
+  - minerals_block_emerald_oresplus.png
+  - minerals_gem_emerald_oresplus.png
+  - minerals_ore_bedrock.png
+  - minerals_ore_emerald_oresplus.png
+  - minerals_ore_glowstone.png
+
+
+#### **[quartz][]**
+
+- By Evergreen/EvergreenTree ([MIT][lic.quartz])
+  - minerals_block_quartz.png
+  - minerals_gem_quartz.png
+  - minerals_ore_quartz.png
+
+
 #### **[rainbow_ore][]**
 
 - KingSmarty / FsxShader2012 ([CC BY-SA][lic.rainbow_ore])
@@ -115,27 +133,15 @@
   - minerals_ore_rainbow.png
 
 
-#### [uranium][]
+#### **[uranium][]**
 
 - LandMine (WTFPL)
   - minerals_gem_uranium.png
   - minerals_ore_uranium.png
 
-#### Textures from [oresplus][] by everamzah
-- By Gambit ([GPL 3.0 / WTFPL???][lic.oresplus])
-  - minerals_block_emerald_oresplus.png
-  - minerals_gem_emerald_oresplus.png
-  - minerals_ore_bedrock.png
-  - minerals_ore_emerald_oresplus.png
-  - minerals_ore_glowstone.png
 
-#### From [quartz][]
-- By Evergreen/EvergreenTree ([MIT][lic.quartz])
-  - minerals_block_quartz.png
-  - minerals_gem_quartz.png
-  - minerals_ore_quartz.png
+#### **[xtraores][]**
 
-#### From [xtraores][]
 - By davidthecreator - WTFPL
   - minerals_block_brick_adamantite.png
   - minerals_block_brick_cobalt.png
@@ -185,6 +191,7 @@
   - minerals_raw_rarium.png
   - minerals_raw_titanium.png
   - minerals_raw_unobtanium.png
+
 
 
 [default]: https://github.com/minetest/minetest_game/tree/master/mods/default
