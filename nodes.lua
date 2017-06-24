@@ -84,3 +84,19 @@ for index, mineral in ipairs(gems) do
 		})
 	end
 end
+
+
+--[[ CLAY
+
+overrides:
+- 'default:clay'
+
+]]
+
+minerals.register_mineral('clay', {
+	description = 'Clay',
+	tiles = {'minerals_clay.png'},
+	groups = {crumbly=3},
+	drop_count = 4,
+	sounds = default.node_sound_dirt_defaults(),
+})
