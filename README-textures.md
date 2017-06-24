@@ -37,15 +37,17 @@
   - minerals_raw_coal.png
 
 
+#### **[moreores]**
+- Calinou ([CC BY-SA 3.0][lic.moreores])
+  - minerals_ore_mithril.png
+  - minerals_ore_silver.png
+
+
 #### **[rainbow_ore][]**
 - KingSmarty / FsxShader2012 ([CC BY-SA][lic.rainbow_ore])
   - minerals_block_rainbow.png
   - minerals_ingot_rainbow.png
   - minerals_ore_rainbow.png
-
-#### [CC BY-SA 3.0][lic.moreores] (from [moreores][])
-- minerals_ore_mithril.png
-- minerals_ore_silver.png
 
 #### [WTFPL][lic.ores] (from [ores][])
 - minerals_ore_adamantine.png
