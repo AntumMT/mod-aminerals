@@ -18,13 +18,19 @@ end
 
 -- Registers a new item
 function minerals.register(name, def)
+	if not string.find(name, minerals.modname .. ':') then
+		name = minerals.modname .. ':' .. name
+	end
+	
 	if def.suffix ~= nil then
 		name = name .. def.suffix
 	end
 	
-	local fullname = minerals.modname .. ':' .. name
+	if not string.find(name, minerals.modname .. ':') then
+		name = minerals.modname .. ':' .. name
+	end
 	
-	minetest.register_craftitem(fullname, {
+	minetest.register_craftitem(name, {
 		description = def.description,
 		inventory_image = def.inventory_image,
 		wield_image = def.wield_image,
