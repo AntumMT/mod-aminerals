@@ -75,9 +75,11 @@
   - minerals_ingot_rainbow.png
   - minerals_ore_rainbow.png
 
-#### WTFPL (from [uranium][])
-- minerals_gem_uranium.png
-- minerals_ore_uranium.png
+
+#### [uranium][]
+- LandMine (WTFPL)
+  - minerals_gem_uranium.png
+  - minerals_ore_uranium.png
 
 #### WTFPL (from [gems_encrustable][] by wowiamdiamonds)
 - minerals_gem_aquamarine.png
