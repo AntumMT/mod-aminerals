@@ -41,6 +41,7 @@ overrides:
 ]]
 
 local lumps = {
+	'clay',
 	'copper',
 	'gold',
 	'iron',
