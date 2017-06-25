@@ -63,6 +63,15 @@
 - param: *def*
   - Item definition
 
+### ***minerals.register_node(name, def, log)***
+- Registers a regular node
+- param: *name*
+  - String name of new node ('minerals:' prepended if not detected in string)
+- param: *def*
+  - Node definition
+- param: *log*
+  - Boolean value to determine if registration message should be logged (for overriding from sub functions)
+
 ### ***minerals.register_mineral(name, def)***
 - Registers a new mineral & logs message
 - param: *name*

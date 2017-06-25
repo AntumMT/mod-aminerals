@@ -153,6 +153,46 @@ function minerals.register_ingot(name, def)
 end
 
 
+--[[ Registers a regular node
+	
+	@param name
+		String name of new node ('minerals:' prepended if not detected in string)
+	@param def
+		Node definition
+	@param log
+		Boolean value to determine if registration message should be logged (for overriding
+		from sub functions)
+]]
+function minerals.register_node(name, def, log)
+	if log == nil then
+		log = true
+	end
+	
+	if def.tiles == nil then
+		def.tiles = minerals.get_texture(name)
+	end
+	
+	name = minerals.format_name(name)
+	
+	-- Drops self by default
+	if def.drop == nil then
+		def.drop = name
+	end
+	
+	-- DEBUG:
+	if def.description ~= nil then
+		def.description = def.description .. ' (minerals)'
+	end
+	
+	minetest.register_node(name, def)
+	
+	if log then
+		--minerals.log_debug('Registered node: ' .. name)
+		minerals.log('Registered node: ' .. name)
+	end
+end
+
+
 -- Registers a new mineral & logs message
 function minerals.register_mineral(name, def)
 	local fullname = minerals.modname .. ':' .. name
