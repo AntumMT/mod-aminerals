@@ -8,78 +8,115 @@
 
 ### ***minerals.modname***
 - Mod name according to 'mod.conf' or determined by label of containing folder
-- Type: string
+- type: *string*
 
 ### ***minerals.modpath***
 - Local path to mod
-- Type: string
+- type: *string*
 
 ### ***minerals.disabled_minerals***
 - List of minerals to be disabled
-- Type: string table
+- type: *string table*
 
 ### ***minerals.override_others***
 - Setting indicating whether or not objects from 3rd party mods should be overridden
-- Type: bool
+- type: *bool*
 
 
 ## -- Methods/Functions --
 
 ### ***minerals.log(message)***
 - Logs message output with header
-- Return type: nil
+- param: *message*
+  - String message to be logged/displayed
 
 ### ***minerals.register(name, def)***
 - Registers a new item
-- Return type: nil
+- param: *name*
+  - Name of new item
+- param: *def*
+  - Item definition
 
 ### ***minerals.register_lump(name, def)***
 - Registers a new mineral lump & logs message
-- Return type: nil
+- param: *name*
+  - Name of new item
+- param: *def*
+  - Item definition
 
 ### ***minerals.register_gem(name, def)***
 - Registers a new gem & logs message
-- Return value: nil
+- param: *name*
+  - Name of new item
+- param: *def*
+  - Item definition
 
 ### ***minerals.register_ingot(name, def)***
 - Registers a new ingot & logs message
-- Return value: nil
+- param: *name*
+  - Name of new item
+- param: *def*
+  - Item definition
 
 ### ***minerals.register_mineral(name, def)***
 - Registers a new mineral & logs message
-- Return type: nil
+- param: *name*
+  - String name of new node ('minerals:' prepended if not detected in string)
+- param: *def*
+  - Node definition
 
 ### ***minerals.override(old, new)***
-- Overrides a node/item & creates aliases of an existing node/item
-- Return type: nil
+- Overrides a node/item & creates aliases of an existing one
+- param: *old*
+  - Name of item being replaced
+- param: *new*
+  - Item name that replaced item will reference
 
 ### ***minerals.override_type(name, modname, suffix)***
-- Overrides a node/item using a common suffix
-- **arg**: name
+- Overrides a node/item using a common mod name & optional suffix
+- param: *name*
   - Base name that is common for old & new objects
-- **arg**: modname
+- param: *modname*
   - Name of the mod from which the item is being overridden
-- **arg**: suffix
+- param: *suffix*
   - Common string to append to both old & new objects name
-- **return**: nil
 
 ### ***minerals.mod_exists(modname)***
 - Checks for existing global or mod path
-- Return type: bool
-
-### ***minerals.titleize(str)***
-- Titleizes a string (e.g., converts 'hello' to 'Hello'
-- Return type: nil
-- FIXME: Only titleizes first letter in string (should convert all whitespace-separated substrings)
+- param: *modname*
+  - Name of mod to check for
+- return: *bool*
+  - *true* if mod is available
 
 ### ***minerals.list_contains(list, value)***
 - Checks table contents for a specified a value
-- Return type: bool
+- param: *list*
+  - Table to be iterated
+- param: *value*
+  - String to search for in *list*
+- return: *bool*
+  - *true* if *value* is found in *list*
 
 ### ***minerals.enabled(mineral)***
 - Checks if a mineral is enabled
-- Return type: bool
+- param: *mineral*
+  - String name of mineral
+- return: *bool*
+  - *true* if *mineral* is not found in disabled list
+
+### ***minerals.titleize(str)***
+- Titleizes a string (e.g., converts 'hello' to 'Hello')
+- param: *str*
+  - String value to be converted
+- FIXME: Only titleizes first letter in string (should convert all whitespace-separated substrings)
 
 ### ***minerals.get_texture(name, suffix, variant)***
 - Retrieves filename string for texture
-- Return type: string
+- param: *name*
+  - Base name of item
+- param: *suffix*
+  - Optional suffix to append to *name*
+- param: *variant*
+  - Optionall suffix to append to *name*
+- return: *string*
+  - Formatted filename of image

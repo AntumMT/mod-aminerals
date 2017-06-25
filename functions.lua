@@ -8,6 +8,8 @@
 --]]
 
 
+-- *** LOGGING ***
+
 -- Logs message output with header
 function minerals.log(message)
 	if minetest.settings:get_bool('log_mods') then
@@ -187,7 +189,10 @@ function minerals.register_mineral(name, def)
 end
 
 
--- Overrides a node/item & creates aliases of an existing node/item
+
+-- *** OVERRIDING ***
+
+-- Overrides a node/item & creates aliases of an existing one
 function minerals.override(old, new)
   minerals.log('Overriding "' .. old .. '" with "' .. new .. '" ...')
   
@@ -219,6 +224,9 @@ function minerals.override_type(name, modname, suffix)
 end
 
 
+
+-- *** CHECKS ***
+
 -- Checks for existing global or mod path
 function minerals.mod_exists(modname)
 	if minetest.global_exists(modname) or minetest.get_modpath(modname) then
@@ -228,12 +236,6 @@ function minerals.mod_exists(modname)
 	return false
 end
 
-
--- Titleizes a string
--- FIXME: Only titleizes first word
-function minerals.titleize(str)
-	return str:gsub('^%l', string.upper)
-end
 
 -- Checks table contents for a specified a value
 function minerals.list_contains(list, value)
@@ -250,6 +252,16 @@ end
 -- Checks if a mineral is enabled
 function minerals.enabled(mineral)
 	return not minerals.list_contains(minerals.disabled_minerals, mineral)
+end
+
+
+
+-- *** HELPERS ***
+
+-- Titleizes a string
+-- FIXME: Only titleizes first word
+function minerals.titleize(str)
+	return str:gsub('^%l', string.upper)
 end
 
 
