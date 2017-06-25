@@ -2,13 +2,6 @@
 
 #### default
 
-- nodes to override
-  - default:obsidian
-
-- craft items to override
-  - default:mese_crystal_fragment
-  - default:obsidian_shard
-
 - add setting to enable old mese
 
 
