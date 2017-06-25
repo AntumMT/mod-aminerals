@@ -35,27 +35,13 @@ end
 
 -- Registers a new item
 function minerals.register(name, def)
-	if not string.find(name, minerals.modname .. ':') then
-		name = minerals.modname .. ':' .. name
-	end
+	name = minerals.format_name(name)
 	
 	if def.suffix ~= nil then
 		name = name .. def.suffix
 	end
 	
-	if not string.find(name, minerals.modname .. ':') then
-		name = minerals.modname .. ':' .. name
-	end
-	
-	minetest.register_craftitem(name, {
-		description = def.description,
-		inventory_image = def.inventory_image,
-		wield_image = def.wield_image,
-		wield_scale = def.wield_scale,
-		groups = def.groups,
-		stack_max = def.stack_max,
-		liquids_pointable = def.liquids_pointable,
-	})
+	minetest.register_craftitem(name, def)
 end
 
 
