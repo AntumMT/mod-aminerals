@@ -1,4 +1,14 @@
 
+#### general
+
+- move unused textures to 'textures/unused_<modname>' directories
+- create mineral table layout in 'api.md'
+- create 'register' functions:
+  - 'register_mineral'
+    - aminerals.register_mineral(name, def)
+  - 'register_item'
+    - aminerals.register_item(name, def)
+    - 'def' should include 'type' attribute
 
 #### default
 
