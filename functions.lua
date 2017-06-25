@@ -225,6 +225,20 @@ function minerals.register_mineral(name, def)
 	minetest.register_alias(name .. '_ore', fullname)
 	
 	minerals.log('Registered mineral "' .. name .. '"')
+	
+	-- Registers drop as new craft item
+	if def.register_drop then
+		-- DEBUG:
+		if def.register_drop.description ~= nil then
+			def.register_drop.description = def.register_drop.description .. ' (minerals)'
+		end
+		
+		-- Make sure there is no whitespace in item name
+		def.drop = string.split(def.drop, ' ')[1]
+		minerals.register(def.drop, def.register_drop)
+		
+		minerals.log('Registered dropped item "' .. def.drop)
+	end
 end
 
 
