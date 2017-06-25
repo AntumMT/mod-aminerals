@@ -249,25 +249,22 @@ end
 
 -- Overrides a node/item & creates aliases of an existing one
 function minerals.override(old, new)
-  minerals.log('Overriding "' .. old .. '" with "' .. new .. '" ...')
-  
-  local unregistered = minetest.unregister_item(old)
-  local aliased = minetest.register_alias(old, new)
+	new = minerals.format_name(new)
+	
+	minerals.log('Overriding "' .. old .. '" with "' .. new .. '" ...')
+	
+	minetest.unregister_item(old)
+	minetest.register_alias(old, new)
 end
 
 
--- Overrides a node/item using a common suffix
+-- Overrides a node/item using a common mod name & optional suffix
 function minerals.override_type(name, modname, suffix)
 	local old = name
 	local new = name
 	
 	if modname then
 		old = modname .. ':' .. old
-	end
-	
-	-- Prepend minerals mod name
-	if not string.find(new, minerals.modname .. ':') then
-		new = minerals.modname .. ':' .. new
 	end
 	
 	if suffix then
