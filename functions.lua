@@ -11,9 +11,9 @@
 -- *** LOGGING ***
 
 -- Logs message output with header
-function minerals.log(message)
+function aminerals.log(message)
 	if minetest.settings:get_bool('log_mods') then
-		minetest.log('action', '[' .. minerals.modname .. '] ' .. message)
+		minetest.log('action', '[' .. aminerals.modname .. '] ' .. message)
 	end
 end
 
@@ -23,9 +23,9 @@ end
 	@param message
 		String message to be logged/displayed
 ]]
-function minerals.log_debug(message)
+function aminerals.log_debug(message)
 	if minetest.settings:get_bool('log_mods') then
-		minetest.log('verbose', '[' .. minerals.modname .. '] ' .. message)
+		minetest.log('verbose', '[' .. aminerals.modname .. '] ' .. message)
 	end
 end
 
@@ -34,13 +34,13 @@ end
 -- *** ITEM & NODE REGISTRATION ***
 
 -- Registers a new item
-function minerals.register(name, def)
+function aminerals.register(name, def)
 	-- DEBUG:
 	if def.register_drop.description ~= nil then
 		def.register_drop.description = def.register_drop.description .. ' (minerals)'
 	end
 	
-	name = minerals.format_name(name)
+	name = aminerals.format_name(name)
 	
 	if def.suffix ~= nil then
 		name = name .. def.suffix
@@ -51,7 +51,7 @@ end
 
 
 -- Registers a new mineral lump & logs message
-function minerals.register_lump(name, def)
+function aminerals.register_lump(name, def)
 	-- Default suffix
 	if def.suffix == nil then
 		def.suffix = '_lump'
@@ -59,31 +59,31 @@ function minerals.register_lump(name, def)
 	
 	-- Default description
 	if def.description == nil then
-		def.description = minerals.titleize(name) .. ' Lump'
+		def.description = aminerals.titleize(name) .. ' Lump'
 	end
 	
 	-- Default inventory image
 	if def.inventory_image == nil then
-		def.inventory_image = minerals.modname .. '_' .. name .. def.suffix .. '.png'
+		def.inventory_image = aminerals.modname .. '_' .. name .. def.suffix .. '.png'
 	end
 	
-	minerals.register(name, def)
+	aminerals.register(name, def)
 	
 	if def.suffix then
 		name = name .. def.suffix
 	end
 	
-	local fullname = minerals.modname .. ':' .. name
+	local fullname = aminerals.modname .. ':' .. name
 	
 	minetest.register_alias(name .. def.suffix, fullname)
 	minetest.register_alias('lump_of_' .. name, fullname)
 	
-	minerals.log('Registered mineral lump "' .. fullname .. '"')
+	aminerals.log('Registered mineral lump "' .. fullname .. '"')
 end
 
 
 -- Registers a new gem & logs message
-function minerals.register_gem(name, def)
+function aminerals.register_gem(name, def)
 	-- Default suffix
 	if def.suffix == nil then
 		def.suffix = '_gem'
@@ -91,30 +91,30 @@ function minerals.register_gem(name, def)
 	
 	-- Default description
 	if def.description == nil then
-		def.description = minerals.titleize(name) .. ' Gem'
+		def.description = aminerals.titleize(name) .. ' Gem'
 	end
 	
 	-- Default inventory image
 	if def.inventory_image == nil then
-		def.inventory_image = minerals.modname .. '_' .. name .. def.suffix .. '.png'
+		def.inventory_image = aminerals.modname .. '_' .. name .. def.suffix .. '.png'
 	end
 	
-	minerals.register(name, def)
+	aminerals.register(name, def)
 	
 	if def.suffix then
 		name = name .. def.suffix
 	end
 	
-	local fullname = minerals.modname .. ':' .. name
+	local fullname = aminerals.modname .. ':' .. name
 	
 	minetest.register_alias(name .. def.suffix, fullname)
 	
-	minerals.log('Registered gem "' .. fullname .. '"')
+	aminerals.log('Registered gem "' .. fullname .. '"')
 end
 
 
 -- Registers a new ingot & logs message
-function minerals.register_ingot(name, def)
+function aminerals.register_ingot(name, def)
 	-- Default suffix
 	if def.suffix == nil then
 		def.suffix = '_ingot'
@@ -122,48 +122,48 @@ function minerals.register_ingot(name, def)
 	
 	-- Default description
 	if def.description == nil then
-		def.description = minerals.titleize(name) .. ' Ingot'
+		def.description = aminerals.titleize(name) .. ' Ingot'
 	end
 	
 	-- Default inventory image
 	if def.inventory_image == nil then
-		def.inventory_image = minerals.modname .. '_' .. name .. def.suffix .. '.png'
+		def.inventory_image = aminerals.modname .. '_' .. name .. def.suffix .. '.png'
 	end
 	
-	minerals.register(name, def)
+	aminerals.register(name, def)
 	
 	if def.suffix then
 		name = name .. def.suffix
 	end
 	
-	local fullname = minerals.modname .. ':' .. name
+	local fullname = aminerals.modname .. ':' .. name
 	
 	minetest.register_alias(name .. def.suffix, fullname)
 	
-	minerals.log('Registered ingot "' .. fullname .. '"')
+	aminerals.log('Registered ingot "' .. fullname .. '"')
 end
 
 
 --[[ Registers a regular node
 	
 	@param name
-		String name of new node ('minerals:' prepended if not detected in string)
+		String name of new node ('aminerals:' prepended if not detected in string)
 	@param def
 		Node definition
 	@param log
 		Boolean value to determine if registration message should be logged (for overriding
 		from sub functions)
 ]]
-function minerals.register_node(name, def, log)
+function aminerals.register_node(name, def, log)
 	if log == nil then
 		log = true
 	end
 	
 	if def.tiles == nil then
-		def.tiles = minerals.get_texture(name)
+		def.tiles = aminerals.get_texture(name)
 	end
 	
-	name = minerals.format_name(name)
+	name = aminerals.format_name(name)
 	
 	-- Drops self by default
 	if def.drop == nil then
@@ -178,15 +178,15 @@ function minerals.register_node(name, def, log)
 	minetest.register_node(name, def)
 	
 	if log then
-		--minerals.log_debug('Registered node: ' .. name)
-		minerals.log('Registered node: ' .. name)
+		--aminerals.log_debug('Registered node: ' .. name)
+		aminerals.log('Registered node: ' .. name)
 	end
 end
 
 
 -- Registers a new mineral & logs message
-function minerals.register_mineral(name, def)
-	local fullname = minerals.format_name(name)
+function aminerals.register_mineral(name, def)
+	local fullname = aminerals.format_name(name)
 	
 	-- Default type is 'ore'
 	if def.type == nil then
@@ -195,12 +195,12 @@ function minerals.register_mineral(name, def)
 	
 	-- Default description
 	if def.description == nil then
-		def.description = minerals.titleize(name) .. ' Ore'
+		def.description = aminerals.titleize(name) .. ' Ore'
 	end
 	
 	-- Default texture
 	if def.tiles == nil then
-		def.tiles = {'default_stone.png^' .. minerals.get_texture(name)}
+		def.tiles = {'default_stone.png^' .. aminerals.get_texture(name)}
 	end
 	
 	-- Default drop
@@ -226,18 +226,18 @@ function minerals.register_mineral(name, def)
 		def.sounds = default.node_sound_stone_defaults()
 	end
 	
-	minerals.register_node(fullname, def, false)
+	aminerals.register_node(fullname, def, false)
 	minetest.register_alias(name .. '_ore', fullname)
 	
-	minerals.log('Registered mineral "' .. name .. '"')
+	aminerals.log('Registered mineral "' .. name .. '"')
 	
 	-- Registers drop as new craft item
 	if def.register_drop then
 		-- Make sure there is no whitespace in item name
 		def.drop = string.split(def.drop, ' ')[1]
-		minerals.register(def.drop, def.register_drop)
+		aminerals.register(def.drop, def.register_drop)
 		
-		minerals.log('Registered dropped item "' .. def.drop)
+		aminerals.log('Registered dropped item "' .. def.drop)
 	end
 end
 
@@ -246,10 +246,10 @@ end
 -- *** OVERRIDING ***
 
 -- Overrides a node/item & creates aliases of an existing one
-function minerals.override(old, new)
-	new = minerals.format_name(new)
+function aminerals.override(old, new)
+	new = aminerals.format_name(new)
 	
-	minerals.log('Overriding "' .. old .. '" with "' .. new .. '" ...')
+	aminerals.log('Overriding "' .. old .. '" with "' .. new .. '" ...')
 	
 	minetest.unregister_item(old)
 	minetest.register_alias(old, new)
@@ -257,7 +257,7 @@ end
 
 
 -- Overrides a node/item using a common mod name & optional suffix
-function minerals.override_type(name, modname, suffix)
+function aminerals.override_type(name, modname, suffix)
 	local old = name
 	local new = name
 	
@@ -270,7 +270,7 @@ function minerals.override_type(name, modname, suffix)
 		new = new .. '_' .. suffix
 	end
 	
-	minerals.override(old, new)
+	aminerals.override(old, new)
 end
 
 
@@ -278,7 +278,7 @@ end
 -- *** CHECKS ***
 
 -- Checks for existing global or mod path
-function minerals.mod_exists(modname)
+function aminerals.mod_exists(modname)
 	if minetest.global_exists(modname) or minetest.get_modpath(modname) then
 		return true
 	end
@@ -288,7 +288,7 @@ end
 
 
 -- Checks table contents for a specified a value
-function minerals.list_contains(list, value)
+function aminerals.list_contains(list, value)
 	for index, list_item in ipairs(list) do
 		if list_item == value then
 			return true
@@ -300,8 +300,8 @@ end
 
 
 -- Checks if a mineral is enabled
-function minerals.enabled(mineral)
-	return not minerals.list_contains(minerals.disabled_minerals, mineral)
+function aminerals.enabled(mineral)
+	return not aminerals.list_contains(aminerals.disabled_minerals, mineral)
 end
 
 
@@ -310,14 +310,14 @@ end
 
 -- Titleizes a string
 -- FIXME: Only titleizes first word
-function minerals.titleize(str)
+function aminerals.titleize(str)
 	return str:gsub('^%l', string.upper)
 end
 
 
 -- Retrieves filename string for texture
-function minerals.get_texture(name, suffix, variant)
-	local texture = minerals.modname
+function aminerals.get_texture(name, suffix, variant)
+	local texture = aminerals.modname
 	
 	for index, S in ipairs({name, suffix, variant}) do
 		if S then
@@ -332,7 +332,7 @@ end
 
 
 --[[ Prepends mod name to item name string
-	Checks if name begins with 'minerals:' & formats so if not.
+	Checks if name begins with 'aminerals:' & formats so if not.
 	
 	@param name
 		String name of node/item
@@ -343,9 +343,9 @@ end
 	@return
 		New formatted name
 ]]
-function minerals.format_name(name, suffix, variant)
-	if not string.find(name, minerals.modname .. ':') then
-		name = minerals.modname .. ':' .. name
+function aminerals.format_name(name, suffix, variant)
+	if not string.find(name, aminerals.modname .. ':') then
+		name = aminerals.modname .. ':' .. name
 	end
 	
 	for index, S in ipairs({suffix, variant}) do

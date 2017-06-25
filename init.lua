@@ -8,20 +8,20 @@
 --]]
 
 
-minerals = {}
-minerals.modname = minetest.get_current_modname()
-minerals.modpath = minetest.get_modpath(minerals.modname)
+aminerals = {}
+aminerals.modname = minetest.get_current_modname()
+aminerals.modpath = minetest.get_modpath(aminerals.modname)
 
 -- Set to 'false' to prevent overriding minerals from other mods
-minerals.override_others = minetest.settings:get_bool('minerals.override_others')
-if minerals.override_others == nil then
+aminerals.override_others = minetest.settings:get_bool('aminerals.override_others')
+if aminerals.override_others == nil then
 	-- Default value is 'true'
-	minerals.override_others = true
+	aminerals.override_others = true
 end
 
 -- List of minerals to disable
-minerals.disabled_minerals = {}
-local disabled_list = minetest.settings:get('minerals.disabled_minerals')
+aminerals.disabled_minerals = {}
+local disabled_list = minetest.settings:get('aminerals.disabled_minerals')
 
 if disabled_list ~= nil then
 	-- Split comma-separated (& semi-color-sparated) list into table
@@ -30,11 +30,11 @@ if disabled_list ~= nil then
 		if string.find(mineral, ';') then
 			-- Semi-colons
 			for index, mineral in ipairs(string.split(mineral, ';')) do
-				table.insert(minerals.disabled_minerals, mineral)
+				table.insert(aminerals.disabled_minerals, mineral)
 			end
 		else
 			-- No semi-colon
-			table.insert(minerals.disabled_minerals, mineral)
+			table.insert(aminerals.disabled_minerals, mineral)
 		end
 	end
 end
@@ -54,14 +54,14 @@ local scripts = {
 }
 
 for index, script in ipairs(scripts) do
-	dofile(minerals.modpath .. '/' .. script .. '.lua')
+	dofile(aminerals.modpath .. '/' .. script .. '.lua')
 end
 
 
 -- DEBUG:
-if minerals.disabled_minerals and minetest.settings:get_bool('log_mods') then
-	minerals.log('Disabled minerals:')
-	for index, mineral in ipairs(minerals.disabled_minerals) do
-		minerals.log('  ' .. mineral)
+if aminerals.disabled_minerals and minetest.settings:get_bool('log_mods') then
+	aminerals.log('Disabled minerals:')
+	for index, mineral in ipairs(aminerals.disabled_minerals) do
+		aminerals.log('  ' .. mineral)
 	end
 end

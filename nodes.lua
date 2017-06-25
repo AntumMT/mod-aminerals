@@ -8,18 +8,18 @@
 --]]
 
 
-local exists_default = minerals.mod_exists('default')
+local exists_default = aminerals.mod_exists('default')
 
 
 
 --[[ ORES
 
 new nodes:
-- minerals:coal
-- minerals:copper
-- minerals:gold
-- minerals:iron
-- minerals:tin
+- aminerals:coal
+- aminerals:copper
+- aminerals:gold
+- aminerals:iron
+- aminerals:tin
 
 overrides:
 - default:stone_with_coal
@@ -29,11 +29,11 @@ overrides:
 - default:stone_with_tin
 
 new items:
-- minerals:coal_lump
-- minerals:copper_lump
-- minerals:gold_lump
-- minerals:iron_lump
-- minerals:tin_lump
+- aminerals:coal_lump
+- aminerals:copper_lump
+- aminerals:gold_lump
+- aminerals:iron_lump
+- aminerals:tin_lump
 
 overrides:
 - default:coal_lump
@@ -57,21 +57,21 @@ for index, mineral in ipairs(ores) do
 	local ore = mineral[1]
 	local groups = mineral[2]
 	
-	if minerals.enabled(ore) then
-		minerals.register_mineral(ore, {
+	if aminerals.enabled(ore) then
+		aminerals.register_mineral(ore, {
 			groups = groups,
 			type = 'ore',
 			register_drop = {
-				description = minerals.titleize(ore) .. ' Lump',
-				inventory_image = minerals.get_texture(ore .. '_lump'),
+				description = aminerals.titleize(ore) .. ' Lump',
+				inventory_image = aminerals.get_texture(ore .. '_lump'),
 			}
 		})
 		
-		if minerals.override_others then
+		if aminerals.override_others then
 			if exists_default then
 				-- 'default' uses naming convention 'default:stone_with_<ore>'
-				minerals.override('default:stone_with_' .. ore, ore)
-				minerals.override_type(ore, 'default', 'lump')
+				aminerals.override('default:stone_with_' .. ore, ore)
+				aminerals.override_type(ore, 'default', 'lump')
 			end
 		end
 	end
@@ -82,21 +82,21 @@ end
 --[[ CLAY
 
 new nodes:
-- minerals:clay
+- aminerals:clay
 
 overrides:
 - default:clay
 
 new items:
-- minerals:clay_lump
+- aminerals:clay_lump
 
 overrides:
 - default:clay_lump
 
 ]]
 
-if minerals.enabled('clay') then
-	minerals.register_mineral('clay', {
+if aminerals.enabled('clay') then
+	aminerals.register_mineral('clay', {
 		description = 'Clay',
 		tiles = {'minerals_clay.png'},
 		groups = {crumbly=3},
@@ -104,14 +104,14 @@ if minerals.enabled('clay') then
 		sounds = default.node_sound_dirt_defaults(),
 		register_drop = {
 			description = 'Clay Lump',
-			inventory_image = minerals.get_texture('clay_lump'),
+			inventory_image = aminerals.get_texture('clay_lump'),
 		}
 	})
 	
-	if minerals.override_others then
+	if aminerals.override_others then
 		if exists_default then
-			minerals.override_type('clay', 'default')
-			minerals.override_type('clay_lump', 'default')
+			aminerals.override_type('clay', 'default')
+			aminerals.override_type('clay_lump', 'default')
 		end
 	end
 end
@@ -121,17 +121,17 @@ end
 --[[ GEMS
 
 new nodes:
-- minerals:diamond
-- minerals:mese
+- aminerals:diamond
+- aminerals:mese
 
 overrides:
 - default:stone_with_diamond
 - default:stone_with_mese
 
 new items:
-- minerals:diamond_gem
-- minerals:mese_gem
-- minerals:mese_fragment
+- aminerals:diamond_gem
+- aminerals:mese_gem
+- aminerals:mese_fragment
 
 FIXME: Some items are not being overridden
 overrides:
@@ -146,14 +146,14 @@ local gems = {
 		'diamond', {cracky=1},
 		register_drop = {
 			description='Diamond',
-			inventory_image=minerals.get_texture('diamond_gem'),
+			inventory_image=aminerals.get_texture('diamond_gem'),
 		}
 	},
 	{
 		'mese', {cracky=1},
 		register_drop = {
 			description='Mese Crystal',
-			inventory_image=minerals.get_texture('mese_gem'),
+			inventory_image=aminerals.get_texture('mese_gem'),
 		}
 	},
 }
@@ -162,29 +162,29 @@ for index, mineral in ipairs(gems) do
 	local gem = mineral[1]
 	local groups = mineral[2]
 	
-	if minerals.enabled(gem) then
-		minerals.register_mineral(gem, {
+	if aminerals.enabled(gem) then
+		aminerals.register_mineral(gem, {
 			groups = groups,
 			type = 'gem',
 			register_drop = mineral.register_drop,
 		})
 		
-		if minerals.override_others then
+		if aminerals.override_others then
 			if exists_default then
 				-- 'default' uses naming convention 'default:stone_with_<gem>'
-				minerals.override('default:stone_with_' .. gem, gem)
+				aminerals.override('default:stone_with_' .. gem, gem)
 			end
 		end
 	end
 end
 
-if minerals.enabled('mese') then
-	minerals.register('mese_fragment', {
+if aminerals.enabled('mese') then
+	aminerals.register('mese_fragment', {
 		description = 'Mese Crystal Fragment',
-		inventory_image = minerals.get_texture('mese_fragment'),
+		inventory_image = aminerals.get_texture('mese_fragment'),
 	})
 	
-	if minerals.override_others and exists_default then
-		minerals.override('default:mese_crystal_fragment', 'mese_fragment')
+	if aminerals.override_others and exists_default then
+		aminerals.override('default:mese_crystal_fragment', 'mese_fragment')
 	end
 end
