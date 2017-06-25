@@ -8,26 +8,18 @@
 --]]
 
 
---[[ MINERALS
+local exists_default = minerals.mod_exists('default')
 
-ore:
+
+
+--[[ ORES
+
+new nodes:
 - minerals:coal
 - minerals:copper
 - minerals:gold
 - minerals:iron
 - minerals:tin
-
-gems:
-- minerals:diamond
-- minerals:mese
-
-dirt:
-- minerals:clay
-
-]]
-
-
---[[ NODES THAT DROP LUMPS
 
 overrides:
 - default:stone_with_coal
@@ -36,10 +28,21 @@ overrides:
 - default:stone_with_iron
 - default:stone_with_tin
 
+new items:
+- minerals:coal_lump
+- minerals:copper_lump
+- minerals:gold_lump
+- minerals:iron_lump
+- minerals:tin_lump
+
+overrides:
+- default:coal_lump
+- default:copper_lump
+- default:gold_lump
+- default:iron_lump
+- default:tin_lump
+
 ]]
-
-
-local exists_default = minerals.mod_exists('default')
 
 
 local ores = {
@@ -57,21 +60,69 @@ for index, mineral in ipairs(ores) do
 	if minerals.enabled(ore) then
 		minerals.register_mineral(ore, {
 			groups = groups,
+			type = 'ore',
+			register_drop = {
+				description = minerals.titleize(ore) .. ' Lump',
+				inventory_image = minerals.get_texture(ore .. '_lump'),
+			}
 		})
 		
 		if minerals.override_others then
-			local fullname = minerals.modname .. ':' .. ore
-			
 			if exists_default then
 				-- 'default' uses naming convention 'default:stone_with_<ore>'
-				minerals.override('default:stone_with_' .. ore, fullname)
+				minerals.override('default:stone_with_' .. ore, ore)
+				minerals.override_type(ore, 'default', 'lump')
 			end
 		end
 	end
 end
 
 
---[[ NODES THAT DROP GEMS
+
+--[[ CLAY
+
+new nodes:
+- minerals:clay
+
+overrides:
+- default:clay
+
+new items:
+- minerals:clay_lump
+
+overrides:
+- default:clay_lump
+
+]]
+
+if minerals.enabled('clay') then
+	minerals.register_mineral('clay', {
+		description = 'Clay',
+		tiles = {'minerals_clay.png'},
+		groups = {crumbly=3},
+		drop_count = 4,
+		sounds = default.node_sound_dirt_defaults(),
+		register_drop = {
+			description = 'Clay Lump',
+			inventory_image = minerals.get_texture('clay_lump'),
+		}
+	})
+	
+	if minerals.override_others then
+		if exists_default then
+			minerals.override_type('clay', 'default')
+			minerals.override_type('clay_lump', 'default')
+		end
+	end
+end
+
+
+
+--[[ GEMS
+
+new nodes:
+- minerals:diamond
+- minerals:mese
 
 overrides:
 - default:stone_with_diamond
@@ -80,8 +131,20 @@ overrides:
 ]]
 
 local gems = {
-	{'diamond', {cracky=1}},
-	{'mese', {cracky=1}},
+	{
+		'diamond', {cracky=1},
+		register_drop = {
+			description='Diamond',
+			inventory_image=minerals.get_texture('diamond_gem'),
+		}
+	},
+	{
+		'mese', {cracky=1},
+		register_drop = {
+			description='Mese Crystal',
+			inventory_image=minerals.get_texture('mese_gem'),
+		}
+	},
 }
 
 for index, mineral in ipairs(gems) do
@@ -91,40 +154,15 @@ for index, mineral in ipairs(gems) do
 	if minerals.enabled(gem) then
 		minerals.register_mineral(gem, {
 			groups = groups,
-			suffix = '_gem',
+			type = 'gem',
+			register_drop = mineral.register_drop,
 		})
 		
 		if minerals.override_others then
-			local fullname = minerals.modname .. ':' .. gem
-			
 			if exists_default then
 				-- 'default' uses naming convention 'default:stone_with_<gem>'
-				minerals.override('default:stone_with_' .. gem, fullname)
+				minerals.override('default:stone_with_' .. gem, gem)
 			end
 		end
-	end
-end
-
-
---[[ CLAY
-
-overrides:
-- 'default:clay'
-
-]]
-
-minerals.register_mineral('clay', {
-	description = 'Clay',
-	tiles = {'minerals_clay.png'},
-	groups = {crumbly=3},
-	drop_count = 4,
-	sounds = default.node_sound_dirt_defaults(),
-})
-
-if minerals.override_others then
-	local fullname = minerals.modname .. ':clay'
-	
-	if exists_default then
-		minerals.override('default:clay', fullname)
 	end
 end
