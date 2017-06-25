@@ -231,13 +231,7 @@ function minerals.register_mineral(name, def)
 		def.sounds = default.node_sound_stone_defaults()
 	end
 	
-	minetest.register_node(fullname, {
-		description = def.description,
-		tiles = def.tiles,
-		groups = def.groups,
-		drop = def.drop,
-		sounds = def.sounds,
-	})
+	minerals.register_node(fullname, def, false)
 	minetest.register_alias(name .. '_ore', fullname)
 	
 	minerals.log('Registered mineral "' .. name .. '"')
