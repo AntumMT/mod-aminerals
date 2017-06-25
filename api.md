@@ -30,6 +30,11 @@
 - param: *message*
   - String message to be logged/displayed
 
+### ***minerals.log_debug(message)***
+- Logs message if verbosity is set to high
+- param: *message*
+  - String message to be logged/displayed
+
 ### ***minerals.register(name, def)***
 - Registers a new item
 - param: *name*

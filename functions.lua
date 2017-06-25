@@ -18,6 +18,21 @@ function minerals.log(message)
 end
 
 
+--[[ Logs message if verbosity is set to high
+
+	@param message
+		String message to be logged/displayed
+]]
+function minerals.log_debug(message)
+	if minetest.settings:get_bool('log_mods') then
+		minetest.log('verbose', '[' .. minerals.modname .. '] ' .. message)
+	end
+end
+
+
+
+-- *** ITEM & NODE REGISTRATION ***
+
 -- Registers a new item
 function minerals.register(name, def)
 	if not string.find(name, minerals.modname .. ':') then
