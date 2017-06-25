@@ -197,6 +197,11 @@ end
 function minerals.register_mineral(name, def)
 	local fullname = minerals.format_name(name)
 	
+	-- Default type is 'ore'
+	if def.type == nil then
+		def.type = 'ore'
+	end
+	
 	-- Default description
 	if def.description == nil then
 		def.description = minerals.titleize(name) .. ' Ore'
@@ -204,21 +209,20 @@ function minerals.register_mineral(name, def)
 	
 	-- Default texture
 	if def.tiles == nil then
-		def.tiles = {'default_stone.png^' .. minerals.modname .. '_' .. name .. '.png'}
+		def.tiles = {'default_stone.png^' .. minerals.get_texture(name)}
 	end
 	
 	-- Default drop
 	if def.drop == nil then
-		def.drop = minerals.modname .. ':' .. name
+		def.drop = fullname
 		
-		-- Default drop type is 'lump' (use empty string to override)
-		if def.suffix == nil then
-			def.suffix = '_lump'
+		-- Ores drop 'lumps'
+		local drop_suffix = def.type
+		if drop_suffix == 'ore' then
+			drop_suffix = 'lump'
 		end
 		
-		if def.suffix then
-			def.drop = def.drop .. def.suffix
-		end
+		def.drop = def.drop .. '_' .. drop_suffix
 	end
 	
 	-- Number of items dropped
