@@ -128,6 +128,17 @@ overrides:
 - default:stone_with_diamond
 - default:stone_with_mese
 
+new items:
+- minerals:diamond_gem
+- minerals:mese_gem
+- minerals:mese_fragment
+
+FIXME: Some items are not being overridden
+overrides:
+- default:diamond
+- default:mese_crystal
+- default:mese_crystal_fragment
+
 ]]
 
 local gems = {
