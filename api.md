@@ -134,3 +134,14 @@
   - Optionall suffix to append to *name*
 - return: *string*
   - Formatted filename of image
+
+### ***minerals.format_name(name, suffix, variant)***
+- Prepends mod name to item name string
+- param: *name*
+  - String name of node/item
+- param: *suffix*
+  - Optional string to be appended to name
+- param: *variant*
+  - Additional optional suffix
+- return: *string*
+  - New formatted name

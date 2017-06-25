@@ -334,3 +334,30 @@ function minerals.get_texture(name, suffix, variant)
 	
 	return texture
 end
+
+
+--[[ Prepends mod name to item name string
+	Checks if name begins with 'minerals:' & formats so if not.
+	
+	@param name
+		String name of node/item
+	@suffix
+		Optional string to be appended to name
+	@variant
+		Additional optional suffix
+	@return
+		New formatted name
+]]
+function minerals.format_name(name, suffix, variant)
+	if not string.find(name, minerals.modname .. ':') then
+		name = minerals.modname .. ':' .. name
+	end
+	
+	for index, S in ipairs({suffix, variant}) do
+		if S then
+			name = name .. '_' .. S
+		end
+	end
+	
+	return name
+end
