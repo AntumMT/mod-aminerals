@@ -177,3 +177,14 @@ for index, mineral in ipairs(gems) do
 		end
 	end
 end
+
+if minerals.enabled('mese') then
+	minerals.register('mese_fragment', {
+		description = 'Mese Crystal Fragment',
+		inventory_image = minerals.get_texture('mese_fragment'),
+	})
+	
+	if minerals.override_others and exists_default then
+		minerals.override('default:mese_crystal_fragment', 'mese_fragment')
+	end
+end
