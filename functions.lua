@@ -35,6 +35,11 @@ end
 
 -- Registers a new item
 function minerals.register(name, def)
+	-- DEBUG:
+	if def.register_drop.description ~= nil then
+		def.register_drop.description = def.register_drop.description .. ' (minerals)'
+	end
+	
 	name = minerals.format_name(name)
 	
 	if def.suffix ~= nil then
@@ -228,11 +233,6 @@ function minerals.register_mineral(name, def)
 	
 	-- Registers drop as new craft item
 	if def.register_drop then
-		-- DEBUG:
-		if def.register_drop.description ~= nil then
-			def.register_drop.description = def.register_drop.description .. ' (minerals)'
-		end
-		
 		-- Make sure there is no whitespace in item name
 		def.drop = string.split(def.drop, ' ')[1]
 		minerals.register(def.drop, def.register_drop)
