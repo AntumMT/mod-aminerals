@@ -195,7 +195,7 @@ end
 
 -- Registers a new mineral & logs message
 function minerals.register_mineral(name, def)
-	local fullname = minerals.modname .. ':' .. name
+	local fullname = minerals.format_name(name)
 	
 	-- Default description
 	if def.description == nil then
