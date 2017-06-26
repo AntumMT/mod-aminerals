@@ -120,24 +120,16 @@ end
 
 --[[ GEMS
 
-new nodes:
-- aminerals:diamond
-- aminerals:mese
-
-overrides:
-- default:stone_with_diamond
-- default:stone_with_mese
-
-new items:
-- aminerals:diamond_gem
-- aminerals:mese_gem
-- aminerals:mese_fragment
+nodes:
+- aminerals:diamond (overrides 'default:stone_with_diamond')
+- aminerals:garnet (overrides 'gems:mineral_garnet')
+- aminerals:mese (overrides 'default:stone_with_mese')
 
 FIXME: Some items are not being overridden
-overrides:
-- default:diamond
-- default:mese_crystal
-- default:mese_crystal_fragment
+items:
+- aminerals:diamond_gem (overrides 'default:diamond')
+- aminerals:mese_gem (overrides 'default:mese_crystal')
+- aminerals:mese_fragment (overrides 'default:mese_crystal_fragment')
 
 ]]
 
@@ -177,6 +169,8 @@ for index, mineral in ipairs(gems) do
 		end
 	end
 end
+
+-- Items not dropped by nodes
 
 if aminerals.enabled('mese') then
 	aminerals.register('mese_fragment', {
