@@ -182,3 +182,11 @@ if aminerals.enabled('mese') then
 		aminerals.override('default:mese_crystal_fragment', 'mese_fragment')
 	end
 end
+
+-- Manual item overrides
+
+if override_others then
+	if exists_default then
+		aminerals.override('default:diamond', 'diamond_gem')
+	end
+end
