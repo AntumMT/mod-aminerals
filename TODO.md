@@ -1,6 +1,7 @@
 
 #### general
 
+- learn if '=' operator creates reference or new object in Lua
 - check if 'anthracite' textures should be rename to 'antracite' (orinally in xtraores)
 - rename '_lump' textures to '_raw'
 - create mineral table layout in 'api.md'
