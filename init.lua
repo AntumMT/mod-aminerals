@@ -65,3 +65,8 @@ if aminerals.disabled_minerals and minetest.settings:get_bool('log_mods') then
 		aminerals.log('  ' .. mineral)
 	end
 end
+
+-- Add 'minerals' global for more simple use in other mods
+if not minetest.global_exists('minerals') then
+	minerals = aminerals
+end
