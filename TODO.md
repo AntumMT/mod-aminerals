@@ -1,7 +1,8 @@
 
 #### general
 
-- move unused textures to 'textures/unused_<modname>' directories
+- check if 'anthracite' textures should be rename to 'antracite' (orinally in xtraores)
+- rename '_lump' textures to '_raw'
 - create mineral table layout in 'api.md'
 - create 'register' functions:
   - 'register_mineral'
